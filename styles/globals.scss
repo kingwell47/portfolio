@@ -1,0 +1,75 @@
+@use "/functions" as fnc;
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  padding: 0;
+  margin: 0;
+  // font-family: var(--font);
+  // font-size: fnc.rem(18);
+  // line-height: 1.1;
+
+  &.open {
+    overflow: hidden;
+  }
+}
+
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+//Visibility
+.hide-for-mobile {
+  //hide for tablet or mobile
+  @include fnc.breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  //hide for desktop or laptop
+  @include fnc.breakpoint-up(large) {
+    display: none;
+  }
+}
+
+.container {
+  padding: 0 fnc.rem(24);
+
+  @include fnc.breakpoint-up(large) {
+    padding: 0;
+  }
+}
+
+.center-wrapper {
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}

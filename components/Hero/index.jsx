@@ -1,0 +1,20 @@
+import Image from "next/image";
+
+function Hero() {
+  return (
+    <section>
+      {/* <Image src='/' alt='Hero Image' /> */}
+      <p>I am</p>
+      <h1>Joel P. Doctor</h1>
+      <p>
+        Web Development <br />
+        Project Management <br />
+        Customer Support <br />
+        Graphic Design
+      </p>
+      <button>Contact Me</button>
+    </section>
+  );
+}
+
+export default Hero;
