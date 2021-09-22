@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+//Clicking on one of the hero index icons should link to the portfolio page and filter for what the user clicked
+
 function Hero() {
   return (
     <section>
