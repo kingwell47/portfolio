@@ -1,0 +1,46 @@
+@use "../../functions" as fnc;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: fnc.rem(24);
+  text-align: center;
+  padding-top: fnc.rem(24);
+
+  .supertitle {
+    font-size: fnc.rem(20);
+  }
+
+  .title {
+    font-size: fnc.rem(50);
+  }
+
+  .subtitle {
+    font-size: fnc.rem(20);
+  }
+
+  .text {
+    font-size: fnc.rem(27);
+  }
+
+  .button {
+    font-size: fnc.rem(20);
+  }
+
+  .iconGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    align-items: center;
+
+    .icon {
+      img {
+        width: fnc.rem(50);
+        height: auto;
+      }
+    }
+  }
+}

@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cantora+One&display=swap");
 
 :root {
+  --color-bg: hsl(207, 95%, 8%);
+  --color-primary-100: hsl(356, 54%, 35%);
   --color-neutral-100: hsl(240, 3%, 88%);
 
   --font-color: var(--color-neutral-100);
@@ -86,9 +88,9 @@ p {
 
 .btn {
   border-radius: fnc.rem(5);
-  background-color: var(--color-neutral-100);
+  background-color: var(--color-primary-100);
   padding: fnc.rem(10);
   border: none;
   font-family: inherit;
-  color: var(--font-color-dark, black);
+  color: var(--color-neutral-100, white);
 }

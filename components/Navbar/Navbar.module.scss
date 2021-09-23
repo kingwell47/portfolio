@@ -6,7 +6,7 @@
   align-items: flex-end;
   margin: 0 auto;
   width: min(fnc.rem(1440), 100%);
-  padding: fnc.rem(24) fnc.rem(24) 0;
+  padding-top: fnc.rem(24);
   position: relative;
 
   .home {
@@ -54,6 +54,7 @@
 
     &__link {
       a {
+        display: block;
         color: var(--font-color-dark, black);
         font-size: fnc.rem(20);
       }
@@ -61,7 +62,7 @@
 
     &__button {
       width: min(100%, fnc.rem(1110));
-      background-color: var(--color-bg-dark, black);
+      background-color: var(--color-primary-100, black);
       color: var(--font-color);
       font-size: fnc.rem(18);
     }
