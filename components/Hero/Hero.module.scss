@@ -7,7 +7,8 @@
   align-items: center;
   gap: fnc.rem(24);
   text-align: center;
-  padding-top: fnc.rem(24);
+  padding-top: fnc.rem(75);
+  padding-bottom: fnc.rem(75);
 
   .supertitle {
     font-size: fnc.rem(20);
@@ -37,6 +38,13 @@
     align-items: center;
 
     .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--color-neutral-100);
+      width: fnc.rem(80);
+      height: fnc.rem(80);
+      border-radius: fnc.rem(5);
       img {
         width: fnc.rem(50);
         height: auto;
