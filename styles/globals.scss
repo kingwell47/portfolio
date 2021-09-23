@@ -1,8 +1,17 @@
 @use "/functions" as fnc;
+@import url("https://fonts.googleapis.com/css2?family=Cantora+One&display=swap");
+
+:root {
+  --color-neutral-100: hsl(240, 3%, 88%);
+
+  --font-color: var(--color-neutral-100);
+  --font: "Cantora One", sans-serif;
+}
 
 html {
   font-size: 100%;
   box-sizing: border-box;
+  background-color: var(--color-bg, black);
 }
 
 *,
@@ -18,7 +27,8 @@ body {
   // align-items: center;
   padding: 0;
   margin: 0;
-  // font-family: var(--font);
+  font-family: var(--font);
+  color: var(--font-color, white);
   // font-size: fnc.rem(18);
   // line-height: 1.1;
 
@@ -72,4 +82,13 @@ h3,
 h4,
 p {
   margin: 0;
+}
+
+.btn {
+  border-radius: fnc.rem(5);
+  background-color: var(--color-neutral-100);
+  padding: fnc.rem(10);
+  border: none;
+  font-family: inherit;
+  color: var(--font-color-dark, black);
 }

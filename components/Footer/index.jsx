@@ -1,3 +1,5 @@
+//Footer should have links to FEM, FCC, GitHub
+
 function Footer() {
   return (
     <footer>

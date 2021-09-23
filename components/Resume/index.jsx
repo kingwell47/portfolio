@@ -1,3 +1,7 @@
+//The resume image should be scrollable or I should embed a PDF preview on the side of the portfolio
+
+//Mobile can probably be just a static image
+
 function Resume() {
   return (
     <section>

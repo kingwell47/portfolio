@@ -1,67 +1,64 @@
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import navStyles from "./Navbar.module.scss";
+import styles from "./Navbar.module.scss";
 import logo from "../../public/logo.png";
+import MobileMenu from "./MobileMenu";
+
+//Navbar links should scroll down the landing page
+//The portfolio link should have a dropdown that has the option to view all projects when hovered
 
 function NavBar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleClick = () => {
+    document.querySelector("body").classList.toggle("open");
+    setMenuOpen(!menuOpen);
+  };
   return (
-    <nav className={navStyles.navbar}>
-      <Link href='/' className={navStyles.navbar__home}>
-        <a>
-          <Image
-            src={logo}
-            className={navStyles.navbar__logo}
-            alt='Joel P. Doctor'
-          />
+    <nav className={styles.navbar}>
+      <Link href='/'>
+        <a className={styles.home}>
+          <Image src={logo} alt='Joel P. Doctor' />
           Joel P. Doctor
         </a>
       </Link>
-      <ul className={navStyles.navbar__mobile__links}>
-        <li className={navStyles.navbar__mobile__link}>
-          <Link href='/'>Portfolio</Link>
-        </li>
-        <li className={navStyles.navbar__mobile__link}>
-          <Link href='/'>Resume</Link>
-        </li>
-        <li className={navStyles.navbar__mobile__link}>
-          <Link href='/'>About</Link>
-        </li>
-        <Link href='/'>
-          <a>
-            <button className={navStyles.navbar__mobile__button}>
-              Contact Me
-            </button>
-          </a>
-        </Link>
-      </ul>
-
+      {menuOpen && <MobileMenu />}
       <button
-        className={navStyles.navbar__mobile__toggle}
+        className={
+          menuOpen
+            ? `${styles.mobile__toggle} ${styles.open} hide-for-desktop`
+            : `${styles.mobile__toggle} hide-for-desktop`
+        }
         title='mobile menu'
         aria-label='open-menu'
-        aria-expanded='false'>
+        aria-expanded={menuOpen}
+        onClick={handleClick}>
         <span></span>
         <span></span>
         <span></span>
       </button>
 
-      <ul className={navStyles.navbar__desktop__links}>
-        <li className={navStyles.navbar__desktop__link}>
+      <ul className={`${styles.desktop__links} hide-for-mobile`}>
+        <li className={styles.desktop__link}>
           <Link href='/'>Portfolio</Link>
         </li>
-        <li className={navStyles.navbar__desktop__link}>
+        <li className={styles.desktop__link}>
           <Link href='/'>Resume</Link>
         </li>
-        <li className={navStyles.navbar__desktop__link}>
+        <li className={styles.desktop__link}>
           <Link href='/'>About</Link>
         </li>
-        <Link href='/'>
-          <a>
-            <button className={navStyles.navbar__desktop__button}>
-              Contact Me
-            </button>
-          </a>
-        </Link>
+        <li>
+          <Link href='/'>
+            <a>
+              <button
+                className={`${styles.desktop__button} btn hide-for-mobile`}>
+                Contact Me
+              </button>
+            </a>
+          </Link>
+        </li>
       </ul>
     </nav>
   );

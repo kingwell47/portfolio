@@ -1,8 +1,138 @@
+@use "../../functions" as fnc;
+
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   margin: 0 auto;
-  width: min(1440px, 100%);
-  background-color: grey;
+  width: min(fnc.rem(1440), 100%);
+  padding: fnc.rem(24) fnc.rem(24) 0;
+  position: relative;
+
+  .home {
+    display: flex;
+    align-items: flex-end;
+    gap: fnc.rem(16);
+    color: var(--font-color, white);
+    font-size: fnc.rem(24);
+    img {
+      width: fnc.rem(60);
+      height: auto;
+    }
+  }
+
+  .mobile {
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      min-width: fnc.rem(327);
+      background-color: var(--color-neutral-100, white);
+      border-radius: fnc.rem(10);
+      padding: fnc.rem(25) fnc.rem(24) fnc.rem(20);
+      position: absolute;
+      width: calc(100% - 2.75rem);
+      top: fnc.rem(90);
+      left: 50%;
+      transform: translatex(-50%);
+      animation: fade-in 250ms;
+
+      * + * {
+        margin-top: 1rem;
+      }
+
+      &.fade_out {
+        animation: fade-out 250ms;
+      }
+    }
+
+    &__links {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__link {
+      a {
+        color: var(--font-color-dark, black);
+        font-size: fnc.rem(20);
+      }
+    }
+
+    &__button {
+      width: min(100%, fnc.rem(1110));
+      background-color: var(--color-bg-dark, black);
+      color: var(--font-color);
+      font-size: fnc.rem(18);
+    }
+
+    &__toggle {
+      cursor: pointer;
+      background: transparent;
+      appearance: none;
+      border: none;
+      width: 2rem;
+      height: 2rem;
+
+      span {
+        display: block;
+        background-color: var(--color-neutral-100, white);
+        height: fnc.rem(3);
+        width: fnc.rem(24);
+        transform-origin: fnc.rem(0);
+        transition: all 350ms ease-in-out;
+
+        &:not(:last-child) {
+          margin-bottom: fnc.rem(6);
+        }
+      }
+      &.open {
+        span {
+          background-color: var(--color-neutral-100, white);
+          border-radius: fnc.rem(3);
+
+          &:first-child {
+            transform: rotate(48deg);
+          }
+
+          &:nth-child(2) {
+            opacity: 0;
+          }
+
+          &:last-child {
+            transform: rotate(-48deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
