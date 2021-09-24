@@ -1,0 +1,64 @@
+@use "../../functions" as fnc;
+
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .title {
+    color: var(--color-primary-200);
+  }
+  .card {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: fnc.rem(188);
+    padding: fnc.rem(24);
+    gap: 2rem;
+  }
+
+  .text {
+    text-align: center;
+    font-size: fnc.rem(22);
+  }
+
+  .tech_wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-neutral-200);
+    width: fnc.rem(40);
+    height: fnc.rem(40);
+    border-radius: fnc.rem(5);
+    img {
+      width: fnc.rem(20);
+      height: auto;
+    }
+  }
+
+  .button_wrapper {
+    display: flex;
+    gap: 1rem;
+    button {
+      font-size: fnc.rem(18);
+    }
+  }
+
+  > button {
+    margin-top: 1rem;
+    width: min(75%, fnc.rem(275));
+    font-size: fnc.rem(20);
+  }
+}

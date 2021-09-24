@@ -27,6 +27,7 @@
   }
 
   .button {
+    width: min(75%, fnc.rem(275));
     font-size: fnc.rem(20);
   }
 
@@ -41,7 +42,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: var(--color-neutral-100);
+      background-color: var(--color-neutral-200);
       width: fnc.rem(80);
       height: fnc.rem(80);
       border-radius: fnc.rem(5);

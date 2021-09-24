@@ -16,7 +16,7 @@ function NavBar() {
     setMenuOpen(!menuOpen);
   };
   return (
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar} container`}>
       <Link href='/'>
         <a className={styles.home}>
           <Image src={logo} alt='Joel P. Doctor' />

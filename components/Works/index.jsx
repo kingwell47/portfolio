@@ -1,4 +1,4 @@
-import image from "next/image";
+import Link from "next/link";
 import Image from "next/image";
 import images from "./images";
 import styles from "./Works.module.scss";
@@ -40,6 +40,31 @@ const CONTENT = [
     live: "https://kingwell47.github.io/javascript-calculator/",
     git: "https://github.com/kingwell47/javascript-calculator",
   },
+  {
+    image: images.pomodoro,
+    title: "Pomodoro Timer",
+    text: "Pomodoro timer built with React",
+    tech: [
+      { logo: images.html, name: "html" },
+      { logo: images.css, name: "css" },
+      { logo: images.javascript, name: "javascript" },
+      { logo: images.react, name: "react" },
+    ],
+    live: "https://kingwell47.github.io/25-5-clock/",
+    git: "https://github.com/kingwell47/25-5-clock",
+  },
+  {
+    image: images.room,
+    title: "Room Homepage",
+    text: "Landing Page with sliding images and text",
+    tech: [
+      { logo: images.html, name: "html" },
+      { logo: images.css, name: "css" },
+      { logo: images.javascript, name: "javascript" },
+    ],
+    live: "https://kingwell47.github.io/room-homepage/",
+    git: "https://github.com/kingwell47/room-homepage",
+  },
 ];
 
 function Works() {
@@ -48,9 +73,9 @@ function Works() {
       <>
         {props.items.map((item, index) => {
           return (
-            <div key={index} className={styles.logo}>
+            <li key={index} className={styles.icon}>
               <Image src={item.logo} alt={item.name} />
-            </div>
+            </li>
           );
         })}
       </>
@@ -58,20 +83,35 @@ function Works() {
   }
   function Card(props) {
     return (
-      <div>
+      <div className={styles.card}>
         <Image src={props.content.image} alt={props.content.title} />
-        <p>{props.content.text}</p>
-        <TechList items={props.content.tech} />
+        <div className={styles.bottom_wrapper}>
+          <p className={styles.text}>{props.content.text}</p>
+          <ul className={styles.tech_wrapper}>
+            <TechList items={props.content.tech} />
+          </ul>
+          <div className={styles.button_wrapper}>
+            <a href={props.content.live} rel='noreferrer' target='_blank'>
+              <button className='btn'>Live Site</button>
+            </a>
+            <a href={props.content.git} rel='noreferrer' target='_blank'>
+              <button className='btn'>GitHub</button>
+            </a>
+          </div>
+        </div>
       </div>
     );
   }
 
   return (
-    <section>
-      <h2>Works</h2>
+    <section className={styles.work}>
+      <h2 className={styles.title}>Featured Work</h2>
       {CONTENT.map((item, index) => {
         return <Card content={item} key={index} />;
       })}
+      <Link href='/' passHref>
+        <button className='btn'>See All</button>
+      </Link>
     </section>
   );
 }

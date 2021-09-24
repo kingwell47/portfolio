@@ -4,7 +4,9 @@
 :root {
   --color-bg: hsl(207, 95%, 8%);
   --color-primary-100: hsl(356, 54%, 35%);
+  --color-primary-200: hsl(2, 71%, 55%);
   --color-neutral-100: hsl(240, 3%, 88%);
+  --color-neutral-200: hsl(2, 71%, 72%);
 
   --font-color: var(--color-neutral-100);
   --font: "Cantora One", sans-serif;
@@ -31,7 +33,7 @@ body {
   margin: 0;
   font-family: var(--font);
   color: var(--font-color, white);
-  // font-size: fnc.rem(18);
+  font-size: fnc.rem(18);
   // line-height: 1.1;
 
   &.open {
@@ -88,7 +90,7 @@ p {
 
 .btn {
   border-radius: fnc.rem(5);
-  background-color: var(--color-primary-100);
+  background-color: var(--color-primary-200);
   padding: fnc.rem(10);
   border: none;
   font-family: inherit;
