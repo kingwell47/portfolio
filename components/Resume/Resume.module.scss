@@ -1,0 +1,46 @@
+@use "/functions" as fnc;
+.resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  background-image: url(./images/resume-bg.png);
+  background-position: top center;
+  background-repeat: none;
+  background-size: cover;
+  padding-top: fnc.rem(48);
+  padding-bottom: fnc.rem(48);
+
+  * + * {
+    margin-top: 1rem;
+  }
+
+  .title {
+    font-size: fnc.rem(27);
+    text-align: center;
+    color: var(--color-primary-200);
+  }
+
+  .text {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: fnc.rem(22);
+  }
+
+  ul {
+    list-style: circle;
+    padding-left: fnc.rem(48);
+    padding-right: fnc.rem(48);
+
+    li {
+      font-size: fnc.rem(20);
+      margin: 0;
+    }
+  }
+
+  button {
+    margin-top: fnc.rem(24);
+    font-size: fnc.rem(20);
+  }
+}

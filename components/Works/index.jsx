@@ -17,7 +17,7 @@ const CONTENT = [
   {
     image: images.url_shortening,
     title: "URL Shortening",
-    text: "Responsive landing page with working URL Shortening link using API",
+    text: "Responsive landing page with working URL Shortening using API",
     tech: [
       { logo: images.html, name: "html" },
       { logo: images.css, name: "css" },
@@ -86,10 +86,10 @@ function Works() {
       <div className={styles.card}>
         <Image src={props.content.image} alt={props.content.title} />
         <div className={styles.bottom_wrapper}>
-          <p className={styles.text}>{props.content.text}</p>
           <ul className={styles.tech_wrapper}>
             <TechList items={props.content.tech} />
           </ul>
+          <p className={styles.text}>{props.content.text}</p>
           <div className={styles.button_wrapper}>
             <a href={props.content.live} rel='noreferrer' target='_blank'>
               <button className='btn'>Live Site</button>

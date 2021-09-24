@@ -9,6 +9,7 @@
     color: var(--color-primary-200);
   }
   .card {
+    max-width: fnc.rem(375);
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
@@ -52,7 +53,10 @@
     display: flex;
     gap: 1rem;
     button {
+      min-width: fnc.rem(84);
       font-size: fnc.rem(18);
+      background-color: var(--color-neutral-100);
+      color: var(--color-primary-100);
     }
   }
 
