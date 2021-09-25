@@ -84,12 +84,16 @@ function Works() {
   function Card(props) {
     return (
       <div className={styles.card}>
-        <Image src={props.content.image} alt={props.content.title} />
+        <Image
+          src={props.content.image}
+          alt={props.content.title}
+          className={styles.image}
+        />
         <div className={styles.bottom_wrapper}>
+          <p className={styles.text}>{props.content.text}</p>
           <ul className={styles.tech_wrapper}>
             <TechList items={props.content.tech} />
           </ul>
-          <p className={styles.text}>{props.content.text}</p>
           <div className={styles.button_wrapper}>
             <a href={props.content.live} rel='noreferrer' target='_blank'>
               <button className='btn'>Live Site</button>
@@ -105,14 +109,19 @@ function Works() {
 
   return (
     <section className={styles.work}>
-      <h2 className={styles.title}>Featured Work</h2>
-      {CONTENT.map((item, index) => {
-        return <Card content={item} key={index} />;
-      })}
       <hr />
-      <Link href='/' passHref>
+      <h2 className={styles.title}>Featured Work</h2>
+      <hr />
+      <div className={styles.cards}>
+        {CONTENT.map((item, index) => {
+          return <Card content={item} key={index} />;
+        })}
+      </div>
+      <hr />
+      <Link href='/portfolio' passHref>
         <button className='btn'>See All</button>
       </Link>
+      <hr />
     </section>
   );
 }
