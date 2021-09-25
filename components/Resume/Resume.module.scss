@@ -38,8 +38,12 @@
       margin: 0;
     }
   }
+  a {
+    width: min(75%, fnc.rem(275));
+  }
 
   button {
+    width: 100%;
     margin-top: fnc.rem(24);
     font-size: fnc.rem(20);
   }

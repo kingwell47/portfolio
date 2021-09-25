@@ -1,0 +1,63 @@
+@use "/functions" as fnc;
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(./images/about-bg.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: fnc.rem(48);
+  padding-bottom: fnc.rem(48);
+
+  * + * {
+    margin-top: fnc.rem(24);
+  }
+  .title {
+    font-size: fnc.rem(27);
+    text-align: center;
+    color: var(--color-primary-200);
+  }
+
+  .text {
+    font-size: fnc.rem(22);
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .link {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-neutral-100);
+    width: fnc.rem(50);
+    height: fnc.rem(50);
+    border-radius: fnc.rem(5);
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    a img {
+      width: fnc.rem(25);
+      height: auto;
+      margin: auto;
+    }
+  }
+
+  button {
+    margin-top: fnc.rem(24);
+    width: min(75%, fnc.rem(275));
+    font-size: fnc.rem(20);
+    align-self: center;
+  }
+}
