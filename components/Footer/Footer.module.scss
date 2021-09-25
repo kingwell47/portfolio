@@ -1,0 +1,19 @@
+@use "/functions" as fnc;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: fnc.rem(24);
+
+  img {
+    width: fnc.rem(60);
+    height: auto;
+  }
+
+  .text {
+    margin-top: fnc.rem(24);
+    font-size: fnc.rem(12);
+  }
+}

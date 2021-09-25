@@ -107,6 +107,39 @@
       }
     }
   }
+
+  .links_wrap {
+    display: flex;
+    align-items: flex-end;
+
+    @include fnc.breakpoint-down(medium) {
+      display: none;
+    }
+  }
+
+  .desktop__links {
+    margin-right: fnc.rem(40);
+  }
+
+  .desktop__link {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: fnc.rem(32);
+    }
+    a {
+      color: var(--color-neutral-100);
+      font-size: fnc.rem(16);
+
+      &:hover {
+        color: var(--color-hover);
+      }
+    }
+  }
+
+  .desktop__button {
+    font-size: fnc.rem(18);
+  }
 }
 
 @keyframes fade-in {

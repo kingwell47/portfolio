@@ -6,18 +6,18 @@ import IconGrid from "./IconGrid";
 function Hero() {
   return (
     <section className={styles.hero}>
-      <div>
+      <div className={styles.left}>
         <p className={styles.supertitle}>I am</p>
         <h1 className={styles.title}>Joel P. Doctor</h1>
         <p className={styles.subtitle}>{'"Joel of all trades"'}</p>
+        <p className={styles.text}>
+          Web Development <br />
+          Project Management <br />
+          Customer Support <br />
+          Graphic Design
+        </p>
+        <button className={`${styles.button} btn`}>Contact Me</button>
       </div>
-      <p className={styles.text}>
-        Web Development <br />
-        Project Management <br />
-        Customer Support <br />
-        Graphic Design
-      </p>
-      <button className={`${styles.button} btn`}>Contact Me</button>
       <IconGrid />
     </section>
   );

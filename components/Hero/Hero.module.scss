@@ -1,6 +1,8 @@
 @use "../../functions" as fnc;
 
 .hero {
+  width: min(fnc.rem(1440), 100%);
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,12 +12,27 @@
   padding-top: fnc.rem(75);
   padding-bottom: fnc.rem(75);
 
+  @include fnc.breakpoint-up(medium) {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    height: fnc.rem(812);
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: fnc.rem(24);
+  }
+
   .supertitle {
     font-size: fnc.rem(20);
   }
 
   .title {
-    font-size: fnc.rem(50);
+    font-size: clamp(fnc.rem(50), 6.5vw, fnc.rem(100));
     color: var(--color-primary-200);
   }
 

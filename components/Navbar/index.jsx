@@ -38,28 +38,26 @@ function NavBar() {
         <span></span>
         <span></span>
       </button>
-
-      <ul className={`${styles.desktop__links} hide-for-mobile`}>
-        <li className={styles.desktop__link}>
-          <Link href='/'>Portfolio</Link>
-        </li>
-        <li className={styles.desktop__link}>
-          <Link href='/'>Resume</Link>
-        </li>
-        <li className={styles.desktop__link}>
-          <Link href='/'>About</Link>
-        </li>
-        <li>
-          <Link href='/'>
-            <a>
-              <button
-                className={`${styles.desktop__button} btn hide-for-mobile`}>
-                Contact Me
-              </button>
-            </a>
-          </Link>
-        </li>
-      </ul>
+      <div className={styles.links_wrap}>
+        <ul className={`${styles.desktop__links} hide-for-mobile`}>
+          <li className={styles.desktop__link}>
+            <Link href='/'>Portfolio</Link>
+          </li>
+          <li className={styles.desktop__link}>
+            <Link href='/'>Resume</Link>
+          </li>
+          <li className={styles.desktop__link}>
+            <Link href='/'>About</Link>
+          </li>
+        </ul>
+        <Link href='/'>
+          <a>
+            <button className={`${styles.desktop__button} btn hide-for-mobile`}>
+              Contact Me
+            </button>
+          </a>
+        </Link>
+      </div>
     </nav>
   );
 }

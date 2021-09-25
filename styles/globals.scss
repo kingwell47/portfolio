@@ -7,6 +7,7 @@
   --color-primary-200: hsl(2, 71%, 55%);
   --color-neutral-100: hsl(240, 3%, 88%);
   --color-neutral-200: hsl(2, 71%, 72%);
+  --color-hover: hsl(40, 98%, 47%);
 
   --font-color: var(--color-neutral-100);
   --font: "Cantora One", sans-serif;
@@ -45,6 +46,10 @@ a,
 a:hover,
 a:active {
   text-decoration: none;
+}
+
+a {
+  transition: all 350ms ease;
 }
 
 //Visibility
@@ -95,4 +100,10 @@ p {
   border: none;
   font-family: inherit;
   color: var(--color-neutral-100, white);
+  cursor: pointer;
+  transition: all 350ms ease;
+
+  &:hover {
+    background-color: var(--color-hover);
+  }
 }

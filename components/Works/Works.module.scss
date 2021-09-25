@@ -1,6 +1,8 @@
 @use "../../functions" as fnc;
 
 .work {
+  width: min(fnc.rem(1440), 100%);
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,6 +51,10 @@
     }
   }
 
+  hr {
+    width: 100%;
+  }
+
   .button_wrapper {
     display: flex;
     gap: 1rem;
@@ -57,11 +63,16 @@
       font-size: fnc.rem(18);
       background-color: var(--color-neutral-100);
       color: var(--color-primary-100);
+      transition: all 350ms ease;
+
+      &:hover {
+        background-color: var(--color-hover);
+        color: var(--color-bg);
+      }
     }
   }
 
   > button {
-    margin-top: 1rem;
     width: min(75%, fnc.rem(275));
     font-size: fnc.rem(20);
   }

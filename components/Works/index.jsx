@@ -109,6 +109,7 @@ function Works() {
       {CONTENT.map((item, index) => {
         return <Card content={item} key={index} />;
       })}
+      <hr />
       <Link href='/' passHref>
         <button className='btn'>See All</button>
       </Link>
