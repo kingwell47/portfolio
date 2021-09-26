@@ -5,10 +5,16 @@
   justify-content: space-between;
   align-items: flex-end;
   margin: 0 auto;
-  width: min(fnc.rem(1440), 100%);
+  width: 100%;
   padding-top: fnc.rem(24);
-  position: relative;
+  position: fixed;
+  z-index: 2;
+  background-color: var(--color-bg);
+  padding: fnc.rem(32) fnc.rem(24) fnc.rem(16);
 
+  @include fnc.breakpoint-up(medium) {
+    justify-content: space-around;
+  }
   .home {
     display: flex;
     align-items: flex-end;
@@ -33,7 +39,7 @@
       padding: fnc.rem(25) fnc.rem(24) fnc.rem(20);
       position: absolute;
       width: calc(100% - 2.75rem);
-      top: fnc.rem(90);
+      top: fnc.rem(106);
       left: 50%;
       transform: translatex(-50%);
       animation: fade-in 250ms;
@@ -129,7 +135,7 @@
     }
     a {
       color: var(--color-neutral-100);
-      font-size: fnc.rem(16);
+      font-size: fnc.rem(22);
 
       &:hover {
         color: var(--color-hover);

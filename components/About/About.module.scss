@@ -42,8 +42,15 @@
     width: fnc.rem(50);
     height: fnc.rem(50);
     border-radius: fnc.rem(5);
+    transition: background-color 350ms ease;
+
+    &:hover {
+      background-color: var(--color-hover);
+    }
 
     a {
+      width: 100%;
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
