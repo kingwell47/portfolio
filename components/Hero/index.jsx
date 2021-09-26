@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Hero.module.scss";
 import IconGrid from "./IconGrid";
 
@@ -16,7 +17,9 @@ function Hero() {
           Customer Support <br />
           Graphic Design
         </p>
-        <button className={`${styles.button} btn`}>Contact Me</button>
+        <Link href='/contact' passHref>
+          <button className={`${styles.button} btn`}>Contact Me</button>
+        </Link>
       </div>
       <IconGrid />
     </section>

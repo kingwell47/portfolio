@@ -17,7 +17,7 @@ function NavBar() {
   };
   return (
     <nav className={`${styles.navbar}`}>
-      <Link href='/'>
+      <Link href='/' passHref>
         <a className={styles.home}>
           <Image src={logo} alt='Joel P. Doctor' />
           Joel P. Doctor
@@ -41,16 +41,16 @@ function NavBar() {
       <div className={styles.links_wrap}>
         <ul className={`${styles.desktop__links} hide-for-mobile`}>
           <li className={styles.desktop__link}>
-            <Link href='/'>Portfolio</Link>
+            <a href='#works'>Featured Work</a>
           </li>
           <li className={styles.desktop__link}>
-            <Link href='/'>Resume</Link>
+            <a href='#resume'>Résumé</a>
           </li>
           <li className={styles.desktop__link}>
-            <Link href='/'>About</Link>
+            <a href='#about'>About</a>
           </li>
         </ul>
-        <Link href='/'>
+        <Link href='/contact'>
           <a>
             <button className={`${styles.desktop__button} btn hide-for-mobile`}>
               Contact Me

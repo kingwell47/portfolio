@@ -17,6 +17,7 @@ html {
   font-size: 100%;
   box-sizing: border-box;
   background-color: var(--color-bg, black);
+  scroll-behavior: smooth;
 }
 
 *,
@@ -40,6 +41,14 @@ body {
   &.open {
     overflow: hidden;
   }
+}
+
+main {
+  padding-top: fnc.rem(156);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 a,
@@ -110,4 +119,13 @@ p {
 
 img {
   display: block;
+}
+
+hr {
+  width: min(fnc.rem(1440), 100%);
+  margin: 0;
+
+  @include fnc.breakpoint-down(medium) {
+    display: none;
+  }
 }

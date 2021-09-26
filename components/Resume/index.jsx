@@ -8,20 +8,37 @@ import resume from "./images/resume.png";
 
 function Resume() {
   return (
-    <section className={`${styles.resume} container`}>
-      <h2 className={styles.title}>Résumé Highlights</h2>
+    <section className={`${styles.resume} container`} id='resume'>
+      <h2 className={styles.title}>Résumé</h2>
+      <hr />
       <div className={styles.top}>
         <div className={styles.text_wrapper}>
-          <p className={styles.text}>
-            Development certificates from FreeCodeCamp.com:
-          </p>
+          <h3 className={styles.inner_title}>Highlights:</h3>
+          <p className={styles.text}>Certificates from FreeCodeCamp.com:</p>
           <ul className={styles.list}>
-            <li className={styles.list_item}>Responsive Web Design</li>
             <li className={styles.list_item}>
-              Javascript Algorithms and Data Structures
+              <a
+                href='https://www.freecodecamp.org/certification/kingwell/responsive-web-design'
+                rel='noreferrer'
+                target='_blank'>
+                Responsive Web Design
+              </a>
             </li>
             <li className={styles.list_item}>
-              Front End Development Libraries
+              <a
+                href='https://www.freecodecamp.org/certification/kingwell/javascript-algorithms-and-data-structures'
+                rel='noreferrer'
+                target='_blank'>
+                Javascript Algorithms and Data Structures
+              </a>
+            </li>
+            <li className={styles.list_item}>
+              <a
+                href='https://www.freecodecamp.org/certification/kingwell/front-end-development-libraries'
+                rel='noreferrer'
+                target='_blank'>
+                Front End Development Libraries
+              </a>
             </li>
           </ul>
           <p className={styles.text}>Awards and Achievements:</p>
@@ -33,17 +50,18 @@ function Resume() {
             <li className={styles.list_item}>Leadership Award: 2016</li>
             <li className={styles.list_item}>Employee of the Year: 2015</li>
           </ul>
+          <a
+            href='https://drive.google.com/file/d/18EUih1vnX3Mzqzgv7mcwgRERR5CUHBFZ/view?usp=sharing'
+            rel='noreferrer'
+            target='_blank'>
+            <button className='btn'>Download</button>
+          </a>
         </div>
         <div className={`${styles.image_wrapper} hide-for-mobile`}>
           <Image src={resume} alt='resume' />
         </div>
       </div>
-      <a
-        href='https://drive.google.com/file/d/18EUih1vnX3Mzqzgv7mcwgRERR5CUHBFZ/view?usp=sharing'
-        rel='noreferrer'
-        target='_blank'>
-        <button className='btn'>Download</button>
-      </a>
+
       <hr />
     </section>
   );

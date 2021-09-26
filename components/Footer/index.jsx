@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./Footer.module.scss";
 import logo from "../../public/logo.png";
 
@@ -7,7 +8,11 @@ import logo from "../../public/logo.png";
 function Footer() {
   return (
     <footer className={styles.footer}>
-      <Image src={logo} alt='' />
+      <Link href='/' passHref>
+        <a>
+          <Image src={logo} alt='' />
+        </a>
+      </Link>
       <div className={styles.text}>Created by Joel P. Doctor © 2021</div>
     </footer>
   );

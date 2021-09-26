@@ -1,15 +1,23 @@
 @use "/functions" as fnc;
 
 .footer {
+  width: min(fnc.rem(1440), 100%);
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: fnc.rem(24);
 
+  @include fnc.breakpoint-up(medium) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   img {
     width: fnc.rem(60);
     height: auto;
+    cursor: pointer;
   }
 
   .text {

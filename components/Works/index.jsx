@@ -108,8 +108,7 @@ function Works() {
   }
 
   return (
-    <section className={styles.work}>
-      <hr />
+    <section className={styles.work} id='works'>
       <h2 className={styles.title}>Featured Work</h2>
       <hr />
       <div className={styles.cards}>
@@ -119,9 +118,8 @@ function Works() {
       </div>
       <hr />
       <Link href='/portfolio' passHref>
-        <button className='btn'>See All</button>
+        <button className='btn'>See All Projects</button>
       </Link>
-      <hr />
     </section>
   );
 }

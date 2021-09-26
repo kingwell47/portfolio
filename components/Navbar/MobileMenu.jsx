@@ -8,16 +8,16 @@ function MobileMenu() {
     <div className={`${styles.mobile__menu} hide-for-desktop`}>
       <ul className={styles.mobile__links}>
         <li className={styles.mobile__link}>
-          <Link href='/'>Portfolio</Link>
+          <a href='#works'>Featured Work</a>
         </li>
         <li className={styles.mobile__link}>
-          <Link href='/'>Resume</Link>
+          <a href='#resume'>Résumé</a>
         </li>
         <li className={styles.mobile__link}>
-          <Link href='/'>About</Link>
+          <a href='#about'>About</a>
         </li>
         <li>
-          <Link href='/'>
+          <Link href='/contact'>
             <a>
               <button className={`${styles.mobile__button} btn`}>
                 Contact Me

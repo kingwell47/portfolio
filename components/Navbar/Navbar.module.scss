@@ -86,6 +86,7 @@
         background-color: var(--color-neutral-100, white);
         height: fnc.rem(3);
         width: fnc.rem(24);
+        border-radius: fnc.rem(3);
         transform-origin: fnc.rem(0);
         transition: all 350ms ease-in-out;
 
@@ -96,7 +97,6 @@
       &.open {
         span {
           background-color: var(--color-neutral-100, white);
-          border-radius: fnc.rem(3);
 
           &:first-child {
             transform: rotate(48deg);
