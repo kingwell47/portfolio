@@ -2,15 +2,33 @@
 
 .contact {
   width: min(fnc.rem(1440), 100%);
+
   .title {
+    font-size: clamp(fnc.rem(27), 4vw, fnc.rem(48));
     text-align: center;
+    color: var(--color-primary-200);
+  }
+
+  .wrapper {
+    margin-top: fnc.rem(16);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: fnc.rem(32);
+
+    img {
+      max-height: fnc.rem(720);
+      width: auto;
+    }
   }
 
   .form {
+    width: min(100%, fnc.rem(720));
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     * + .label {
       margin-top: fnc.rem(16);
@@ -18,21 +36,30 @@
   }
 
   .label {
-    width: min(fnc.rem(350), 100%);
+    width: min(fnc.rem(720), 100%);
   }
 
   .input,
   .text_area {
-    width: min(fnc.rem(350), 100%);
+    width: min(fnc.rem(720), 100%);
     border-radius: fnc.rem(8);
+    font-size: fnc.rem(16);
   }
 
   .input {
     height: fnc.rem(40);
+    padding-left: 1rem;
   }
 
   .text_area {
     height: fnc.rem(300);
+    padding: 1rem;
+  }
+
+  .confirmation {
+    height: fnc.rem(16);
+    margin-top: 1rem;
+    color: var(--color-primary-200);
   }
 
   .button {
