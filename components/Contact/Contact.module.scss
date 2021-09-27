@@ -24,6 +24,7 @@
   .input,
   .text_area {
     width: min(fnc.rem(350), 100%);
+    border-radius: fnc.rem(8);
   }
 
   .input {

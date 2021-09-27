@@ -44,6 +44,7 @@ function Contact() {
           type='text'
           name='user_name'
           title='Name'
+          required
         />
         <label className={styles.label} htmlFor='user_email'>
           Email
@@ -53,11 +54,27 @@ function Contact() {
           type='email'
           name='user_email'
           title='Email'
+          required
+        />
+        <label className={styles.label} htmlFor='subject'>
+          Subject
+        </label>
+        <input
+          className={styles.input}
+          type='text'
+          name='subject'
+          title='Subject'
+          required
         />
         <label className={styles.label} htmlFor='message'>
           Message
         </label>
-        <textarea className={styles.text_area} name='message' title='Message' />
+        <textarea
+          className={styles.text_area}
+          name='message'
+          title='Message'
+          required
+        />
         <input type='submit' value='Send' className={`${styles.button} btn`} />
       </form>
     </section>
