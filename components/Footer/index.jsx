@@ -8,7 +8,7 @@ import logo from "../../public/logo.png";
 function Footer() {
   return (
     <footer className={styles.footer}>
-      <Link href='/' passHref>
+      <Link href='/#' passHref>
         <a>
           <Image src={logo} alt='' />
         </a>

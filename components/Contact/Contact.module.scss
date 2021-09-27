@@ -1,0 +1,42 @@
+@use "/functions" as fnc;
+
+.contact {
+  width: min(fnc.rem(1440), 100%);
+  .title {
+    text-align: center;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    * + .label {
+      margin-top: fnc.rem(16);
+    }
+  }
+
+  .label {
+    width: min(fnc.rem(350), 100%);
+  }
+
+  .input,
+  .text_area {
+    width: min(fnc.rem(350), 100%);
+  }
+
+  .input {
+    height: fnc.rem(40);
+  }
+
+  .text_area {
+    height: fnc.rem(300);
+  }
+
+  .button {
+    width: min(50%, fnc.rem(275));
+    margin-top: fnc.rem(50);
+    font-size: fnc.rem(20);
+  }
+}
