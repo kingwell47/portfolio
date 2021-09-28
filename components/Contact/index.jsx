@@ -15,7 +15,11 @@ function Contact() {
   const form = useRef();
   const recaptchaRef = React.createRef();
 
-  const verifyCallback = () => {
+  const verifyCallback = (value) => {
+    if (value === null) {
+      document.getElementById("submit").disabled = true;
+      return;
+    }
     document.getElementById("submit").disabled = false;
   };
 
