@@ -121,6 +121,10 @@ function Contact() {
             onloadCallback={callback}
             theme='dark'
           />
+          <script
+            src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit'
+            async
+            defer></script>
           <input
             type='submit'
             value='Send'
