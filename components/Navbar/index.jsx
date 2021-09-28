@@ -23,7 +23,7 @@ function NavBar() {
           Joel P. Doctor
         </a>
       </Link>
-      {menuOpen && <MobileMenu />}
+      {menuOpen && <MobileMenu handler={handleClick} />}
       <button
         className={
           menuOpen
