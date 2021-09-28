@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import Image from "next/image";
+import Recaptcha from "react-recaptcha";
 import emailjs from "emailjs-com";
 import styles from "./Contact.module.scss";
 import image from "./image.jpg";
@@ -10,10 +11,23 @@ import image from "./image.jpg";
 
 function Contact() {
   const [sent, setSent] = useState(false);
+  const [verified, setVerified] = useState(false);
   const form = useRef();
+
+  let recaptchaInstance;
+
+  const callback = () => {
+    console.log("loaded");
+  };
+
+  const verifyCallback = () => {
+    document.getElementById("submit").disabled = false;
+  };
 
   const handleSent = () => {
     setSent(true);
+    recaptchaInstance.reset();
+    document.getElementById("submit").disabled = true;
   };
 
   const handleChange = () => {
@@ -98,13 +112,21 @@ function Contact() {
           <span className={styles.confirmation}>
             {sent ? "Thanks for the message!" : ""}
           </span>
-          <div
-            className='g-recaptcha'
-            data-sitekey='6LdAgZUcAAAAALaLmlq3ISoSOLIlP6U1GKqSDYEj'></div>
+          <br />
+          <Recaptcha
+            sitekey='6LdAgZUcAAAAALaLmlq3ISoSOLIlP6U1GKqSDYEj'
+            ref={(e) => (recaptchaInstance = e)}
+            render='explicit'
+            verifyCallback={verifyCallback}
+            onloadCallback={callback}
+            theme='dark'
+          />
           <input
             type='submit'
             value='Send'
             className={`${styles.button} btn`}
+            id='submit'
+            disabled
           />
         </form>
       </div>

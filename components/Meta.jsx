@@ -7,6 +7,11 @@ const Meta = ({ title, keywords, description }) => {
       <meta name='keywords' content={keywords} />
       <meta name='description' content={description} />
       <meta charSet='utf-8' />
+      <link rel='preconnect' href='https://fonts.googleapis.com' />
+      <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
+      <link
+        href='https://fonts.googleapis.com/css2?family=Cantora+One&display=swap'
+        rel='stylesheet'></link>
       <link rel='icon' href='/logo.png' />
       <title>{title}</title>
     </Head>

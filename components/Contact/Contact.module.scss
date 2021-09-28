@@ -66,5 +66,13 @@
     width: min(50%, fnc.rem(275));
     margin-top: fnc.rem(20);
     font-size: fnc.rem(20);
+
+    &:disabled {
+      opacity: 50%;
+
+      &:hover {
+        background-color: var(--color-primary-200);
+      }
+    }
   }
 }
