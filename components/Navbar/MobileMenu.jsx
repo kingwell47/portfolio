@@ -8,7 +8,7 @@ function MobileMenu(props) {
     <div className={`${styles.mobile__menu} hide-for-desktop`}>
       <ul className={styles.mobile__links}>
         <li className={styles.mobile__link} onClick={props.handler}>
-          <Link href='/#'>Home</Link>
+          <Link href='/'>Home</Link>
         </li>
         <li className={styles.mobile__link} onClick={props.handler}>
           <Link href='/#works'>Featured Work</Link>

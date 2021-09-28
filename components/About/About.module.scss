@@ -18,20 +18,20 @@
 
     @include fnc.breakpoint-up(medium) {
       flex-direction: row;
+      justify-content: space-around;
       padding-bottom: 0;
     }
   }
 
-  @include fnc.breakpoint-up(medium) {
+  @include fnc.breakpoint-up(large) {
     background-image: none;
   }
 
   .image_wrap {
     flex: 50%;
-
-    img {
-      max-height: fnc.rem(750);
-    }
+    max-width: fnc.rem(500);
+    max-height: fnc.rem(750);
+    position: relative;
   }
 
   .right {
@@ -42,7 +42,8 @@
     align-items: center;
 
     @include fnc.breakpoint-up(large) {
-      padding-right: 4rem;
+      padding-top: fnc.rem(25);
+      padding-bottom: fnc.rem(25);
     }
   }
 
@@ -50,6 +51,10 @@
     font-size: clamp(fnc.rem(27), 4vw, fnc.rem(48));
     text-align: center;
     color: var(--color-primary-200);
+
+    @include fnc.breakpoint-up(large) {
+      text-align: left;
+    }
   }
 
   .text_wrap {
@@ -102,7 +107,7 @@
   }
 
   button {
-    margin-top: fnc.rem(50);
+    margin-top: fnc.rem(25);
     width: min(75%, fnc.rem(275));
     font-size: fnc.rem(20);
     align-self: center;

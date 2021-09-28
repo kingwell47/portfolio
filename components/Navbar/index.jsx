@@ -17,7 +17,7 @@ function NavBar() {
   };
   return (
     <nav className={`${styles.navbar}`}>
-      <Link href='/#' passHref>
+      <Link href='/' passHref>
         <a className={styles.home}>
           <Image src={logo} alt='Joel P. Doctor' />
           Joel P. Doctor
@@ -41,7 +41,7 @@ function NavBar() {
       <div className={styles.links_wrap}>
         <ul className={`${styles.desktop__links} hide-for-mobile`}>
           <li className={styles.desktop__link}>
-            <Link href='/#'>Home</Link>
+            <Link href='/'>Home</Link>
           </li>
           <li className={styles.desktop__link}>
             <Link href='/#works'>Featured Work</Link>

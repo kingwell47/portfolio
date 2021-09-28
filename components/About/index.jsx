@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import icons from "./images";
-import bike from "./images/about.png";
+import bike from "../../public/images/about/about.png";
 
 import styles from "./About.module.scss";
 //About should have one of my photos on the side and have the contact me CTA at the bottom
@@ -13,7 +12,7 @@ function About() {
       <hr />
       <div className={styles.bottom}>
         <div className={`${styles.image_wrap} hide-for-mobile`}>
-          <Image src={bike} alt='bike' />
+          <Image src={bike} alt='bike' layout='fill' />
         </div>
         <div className={styles.right}>
           <div className={styles.text_wrap}>
@@ -43,7 +42,12 @@ function About() {
                 href='https://github.com/kingwell47'
                 rel='noreferrer'
                 target='_blank'>
-                <Image src={icons.github} alt='github' />
+                <Image
+                  src='/images/about/github.png'
+                  alt='github'
+                  width='100%'
+                  height='100%'
+                />
               </a>
             </li>
             <li className={styles.link}>
@@ -51,7 +55,12 @@ function About() {
                 href='https://www.frontendmentor.io/profile/kingwell47'
                 rel='noreferrer'
                 target='_blank'>
-                <Image src={icons.fem} alt='frontend mentor' />
+                <Image
+                  src='/images/about/fem.png'
+                  alt='frontend mentor'
+                  width='100%'
+                  height='100%'
+                />
               </a>
             </li>
             <li className={styles.link}>
@@ -59,7 +68,12 @@ function About() {
                 href='https://www.freecodecamp.org/kingwell'
                 rel='noreferrer'
                 target='_blank'>
-                <Image src={icons.fcc} alt='freecodecamp' />
+                <Image
+                  src='/images/about/fcc.svg'
+                  alt='freecodecamp'
+                  width='100%'
+                  height='100%'
+                />
               </a>
             </li>
             <li className={styles.link}>
@@ -67,7 +81,12 @@ function About() {
                 href='https://www.linkedin.com/in/joel-d-05854919/'
                 rel='noreferrer'
                 target='_blank'>
-                <Image src={icons.linkedin} alt='linkedin' />
+                <Image
+                  src='/images/about/linkedin.png'
+                  alt='linkedin'
+                  width='100%'
+                  height='100%'
+                />
               </a>
             </li>
           </ul>

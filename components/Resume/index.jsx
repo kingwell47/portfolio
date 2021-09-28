@@ -51,9 +51,10 @@ function Resume() {
             <li className={styles.list_item}>Employee of the Year: 2015</li>
           </ul>
           <a
-            href='https://drive.google.com/file/d/18EUih1vnX3Mzqzgv7mcwgRERR5CUHBFZ/view?usp=sharing'
+            href='/joel_doctor_resume.pdf'
             rel='noreferrer'
-            target='_blank'>
+            target='_blank'
+            download>
             <button className='btn'>Download</button>
           </a>
         </div>

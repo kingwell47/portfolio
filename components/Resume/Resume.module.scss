@@ -34,6 +34,10 @@
     font-size: clamp(fnc.rem(27), 4vw, fnc.rem(48));
     text-align: center;
     color: var(--color-primary-200);
+
+    @include fnc.breakpoint-up(large) {
+      align-self: start;
+    }
   }
   .text_wrapper {
     flex: 50%;
@@ -87,6 +91,7 @@
 
   .image_wrapper {
     flex: 50%;
+    position: relative;
 
     img {
       max-height: fnc.rem(750);

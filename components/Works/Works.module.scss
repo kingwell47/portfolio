@@ -12,6 +12,10 @@
   .title {
     font-size: clamp(fnc.rem(27), 4vw, fnc.rem(48));
     color: var(--color-primary-200);
+
+    @include fnc.breakpoint-up(large) {
+      align-self: start;
+    }
   }
 
   .cards {
