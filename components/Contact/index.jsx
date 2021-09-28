@@ -98,6 +98,9 @@ function Contact() {
           <span className={styles.confirmation}>
             {sent ? "Thanks for the message!" : ""}
           </span>
+          <div
+            className='g-recaptcha'
+            data-sitekey='6LdAgZUcAAAAALaLmlq3ISoSOLIlP6U1GKqSDYEj'></div>
           <input
             type='submit'
             value='Send'
