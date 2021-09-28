@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import Image from "next/image";
-import Recaptcha from "react-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "emailjs-com";
 import styles from "./Contact.module.scss";
 import image from "./image.jpg";
@@ -13,12 +13,7 @@ function Contact() {
   const [sent, setSent] = useState(false);
   const [verified, setVerified] = useState(false);
   const form = useRef();
-
-  let recaptchaInstance;
-
-  const callback = () => {
-    console.log("loaded");
-  };
+  const recaptchaRef = React.createRef();
 
   const verifyCallback = () => {
     document.getElementById("submit").disabled = false;
@@ -26,7 +21,7 @@ function Contact() {
 
   const handleSent = () => {
     setSent(true);
-    recaptchaInstance.reset();
+    recaptchaRef.current.reset();
     document.getElementById("submit").disabled = true;
   };
 
@@ -113,18 +108,12 @@ function Contact() {
             {sent ? "Thanks for the message!" : ""}
           </span>
           <br />
-          <Recaptcha
+          <ReCAPTCHA
             sitekey='6LdAgZUcAAAAALaLmlq3ISoSOLIlP6U1GKqSDYEj'
-            ref={(e) => (recaptchaInstance = e)}
-            render='explicit'
-            verifyCallback={verifyCallback}
-            onloadCallback={callback}
+            ref={recaptchaRef}
+            onChange={verifyCallback}
             theme='dark'
           />
-          <script
-            src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit'
-            async
-            defer></script>
           <input
             type='submit'
             value='Send'

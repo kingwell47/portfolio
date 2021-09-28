@@ -13,7 +13,7 @@
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-recaptcha": "^2.3.10",
+    "react-google-recaptcha": "^2.1.0",
     "sass": "^1.42.0"
   },
   "devDependencies": {
