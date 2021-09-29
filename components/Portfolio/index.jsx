@@ -1,38 +1,13 @@
 import { useState } from "react";
-
-const DUMMY_DATA = [
-  {
-    id: 1,
-    title: "Title 1",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore deleniti blanditiis praesentium alias accusamus amet dolore soluta eveniet sunt dolorum",
-    tags: "html",
-    image: "test image",
-  },
-  {
-    id: 2,
-    title: "Title 2",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore deleniti blanditiis praesentium alias accusamus amet dolore soluta eveniet sunt dolorum",
-    tags: "css",
-    image: "test image",
-  },
-  {
-    id: 3,
-    title: "Title 3",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore deleniti blanditiis praesentium alias accusamus amet dolore soluta eveniet sunt dolorum",
-    tags: "javascript",
-    image: "test image",
-  },
-];
+import Image from "next/image";
+import projectData from "./data.json";
 
 function Porftolio() {
-  const [data, setData] = useState(DUMMY_DATA);
+  const [data, setData] = useState(projectData);
 
   const handleChange = (e) => {
     let selection = e.target.value.toLowerCase();
-    const newData = DUMMY_DATA.filter((item) => {
+    const newData = projectData.filter((item) => {
       if (selection === "") return item;
       return item.tags.toLowerCase().includes(selection);
     });
@@ -44,7 +19,12 @@ function Porftolio() {
         <h2>{props.values.title}</h2>
         <p>{props.values.description}</p>
         <p>{props.values.tags}</p>
-        <div>{props.values.image}</div>
+        <Image
+          src={`/images/portfolio/${props.values.image}`}
+          alt={props.values.image}
+          width='300'
+          height='300'
+        />
       </div>
     );
   }
@@ -61,7 +41,7 @@ function Porftolio() {
       </div>
       <div>
         {data.map((item) => {
-          return <CardElem key={item.id} values={item} />;
+          return <CardElem key={item._id} values={item} />;
         })}
       </div>
     </section>

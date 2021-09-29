@@ -1,0 +1,82 @@
+[
+  {
+    "_id": 1,
+    "title": "Sunnyside Agency Landing Page",
+    "description": "This is a solution to the Sunnyside agency landing page challenge on Frontend Mentor.",
+    "url1": "https://kingwell47.github.io/sunnyside/",
+    "url2": "https://github.com/kingwell47/sunnyside",
+    "date": "August 26, 2021",
+    "tags": "HTML, CSS, JavaScript",
+    "image": "sunnyside.jpg"
+  },
+  {
+    "_id": 2,
+    "title": "Tip Calculator",
+    "description": "This is a solution to the Tip calculator app challenge on Frontend Mentor.",
+    "url1": "https://kingwell47.github.io/tip-calculator/",
+    "url2": "https://github.com/kingwell47/tip-calculator",
+    "date": "August 29, 2021",
+    "tags": "HTML, CSS, JavaScript",
+    "image": "tip-calculator.png"
+  },
+  {
+    "_id": 3,
+    "title": "Room Homepage",
+    "description": "This is a solution to the Room homepage challenge on Frontend Mentor.",
+    "url1": "https://kingwell47.github.io/room-homepage/",
+    "url2": "https://github.com/kingwell47/room-homepage",
+    "date": "September 3, 2021",
+    "tags": "HTML, CSS, JavaScript",
+    "image": "room-homepage.png"
+  },
+  {
+    "_id": 4,
+    "title": "Markdown Previewer",
+    "description": "This is a solution to the Build a Markdown Previewer project on FreeCodeCamp.",
+    "url1": "https://kingwell47.github.io/markdown-previewer/",
+    "url2": "https://github.com/kingwell47/markdown-previewer",
+    "date": "September 5, 2021",
+    "tags": "HTML, CSS, JavaScript, React",
+    "image": "markdown.png"
+  },
+  {
+    "_id": 5,
+    "title": "Sound Machine",
+    "description": "This is a solution to the Build a Drum Machine project on FreeCodeCamp.",
+    "url1": "https://kingwell47.github.io/drum-machine/",
+    "url2": "https://github.com/kingwell47/drum-machine",
+    "date": "September 6, 2021",
+    "tags": "HTML, CSS, JavaScript, React",
+    "image": "sound-machine.png"
+  },
+  {
+    "_id": 6,
+    "title": "JavaScript Calculator",
+    "description": "This is a solution to the Build a JavaScript Calculator project on FreeCodeCamp.",
+    "url1": "https://kingwell47.github.io/javascript-calculator/",
+    "url2": "https://github.com/kingwell47/javascript-calculator",
+    "date": "September 11, 2021",
+    "tags": "HTML, CSS, JavaScript, React",
+    "image": "calculator.png"
+  },
+  {
+    "_id": 7,
+    "title": "25 + 5 Clock",
+    "description": "This is a solution to the Build a 25 + 5 Clock project on FreeCodeCamp.",
+    "url1": "https://kingwell47.github.io/25-5-clock/",
+    "url2": "https://github.com/kingwell47/25-5-clock",
+    "date": "September 13, 2021",
+    "tags": "HTML, CSS, JavaScript, React",
+    "image": "pomodoro.png"
+  },
+  {
+    "_id": 8,
+    "title": "Shortly URL Shortening API",
+    "description": "This is a solution to the Shortly URL shortening API Challenge challenge on Frontend Mentor",
+    "url1": "https://kingwell47.github.io/url-shortnening/",
+    "url2": "https://github.com/kingwell47/url-shortnening",
+    "date": "September 19, 2021",
+    "tags": "HTML, CSS, JavaScript, React, API",
+    "image": "shortening.jpeg"
+  }
+]
