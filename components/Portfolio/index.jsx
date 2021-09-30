@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import projectData from "./data.json";
 
 function Porftolio() {
@@ -96,6 +97,7 @@ function Porftolio() {
           width='300'
           height='300'
         />
+        <Link href={`/portfolio/${props.values._id}`}>Learn More</Link>
       </div>
     );
   }

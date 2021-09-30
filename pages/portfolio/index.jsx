@@ -1,5 +1,5 @@
-import Porftolio from "../components/Portfolio";
 import Head from "next/head";
+import Porftolio from "../../components/Portfolio";
 
 //Portfolio will contain all the projects
 
