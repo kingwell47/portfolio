@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import { projectObj } from "./markdown";
+import Image from "next/image";
+import Link from "next/link";
 import marked from "marked";
+import styles from "./Readme.module.scss";
 
 function Readme(props) {
   const [content, setContent] = useState();
@@ -40,7 +43,27 @@ function Readme(props) {
     });
   }, []);
 
-  return <section dangerouslySetInnerHTML={content} />;
+  return (
+    <>
+      <section className={styles.readme}>
+        <Link href='/portfolio'>
+          <a className={styles.back}>Back to All Projects</a>
+        </Link>
+        <div className={styles.image_wrapper}>
+          <Image
+            src={`/images/portfolio/${props.image}`}
+            alt={props.image}
+            layout='fill'
+            className={styles.image}
+          />
+        </div>
+        <div dangerouslySetInnerHTML={content} className={styles.text} />
+        <Link href='/portfolio'>
+          <a className={styles.back}>Back to All Projects</a>
+        </Link>
+      </section>
+    </>
+  );
 }
 
 export default Readme;

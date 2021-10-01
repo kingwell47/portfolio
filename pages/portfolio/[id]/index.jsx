@@ -1,12 +1,16 @@
+import Head from "next/head";
 import DATA from "../../../components/Portfolio/data.json";
 import Readme from "../../../components/Readme";
 
 function Project({ project }) {
   return (
-    <div>
-      <Readme page={project._id} />
-      <div>This is {project.title}</div>
-    </div>
+    <>
+      <Head>
+        <title>{project.title} - Joel P. Doctor - Online Portfolio</title>
+        <meta name='description' content={project.description} />
+      </Head>
+      <Readme page={project._id} image={project.image} />
+    </>
   );
 }
 

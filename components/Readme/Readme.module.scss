@@ -1,0 +1,70 @@
+@use "/functions" as fnc;
+
+.readme {
+  width: min(100%, fnc.rem(1110));
+
+  * + h2,
+  * + h3 {
+    margin-top: fnc.rem(24);
+  }
+
+  h3 + p {
+    margin-top: fnc.rem(24);
+  }
+
+  .back {
+    font-size: fnc.rem(16);
+    color: var(--color-primary-100);
+  }
+
+  p {
+    margin-left: 2rem;
+  }
+
+  .text {
+    margin-top: fnc.rem(24);
+    margin-bottom: fnc.rem(24);
+  }
+
+  .image_wrapper {
+    width: fnc.rem(400);
+    height: fnc.rem(700);
+    margin-left: fnc.rem(16);
+    position: relative;
+    float: right;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  h1 {
+    margin-bottom: fnc.rem(24);
+    color: var(--color-primary-200);
+  }
+
+  ul {
+    list-style: circle;
+    margin-left: fnc.rem(48);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--color-primary-200);
+    }
+  }
+
+  pre {
+    margin-left: fnc.rem(40);
+    background-color: var(--color-primary-100);
+    padding: fnc.rem(16);
+    border-radius: fnc.rem(10);
+  }
+
+  code {
+    font-size: fnc.rem(16);
+  }
+}
