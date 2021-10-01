@@ -1,8 +1,10 @@
 import DATA from "../../../components/Portfolio/data.json";
+import Readme from "../../../components/Readme";
 
 function Project({ project }) {
   return (
     <div>
+      <Readme page={project._id} />
       <div>This is {project.title}</div>
     </div>
   );
