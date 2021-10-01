@@ -39,6 +39,7 @@
   }
 
   h1 {
+    font-size: clamp(fnc.rem(27), 4vw, fnc.rem(48));
     margin-bottom: fnc.rem(24);
     color: var(--color-primary-200);
   }

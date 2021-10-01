@@ -1,4 +1,3 @@
-export const calculator = `
 # JavaScript Calculator
 
 ## FreeCodeCamp.org - Front End Development Libraries Project
@@ -42,7 +41,7 @@ Programming a calculator is hard!
 
 Also, gradients are cool:
 
-\`\`\`css
+```css
 .display-wrapper {
   width: 100%;
   display: flex;
@@ -57,11 +56,11 @@ Also, gradients are cool:
   box-shadow: inset 0px 0px 0px 4px rgba(229, 229, 229, 0.09);
   border-radius: fnc.rem(5);
 }
-\`\`\`
+```
 
 Handling Negative numbers / the Minus sign is particularly tricky:
 
-\`\`\`js
+```js
 const handleOperator = (ops) => {
   if (ops === "-" && operand2 === INIT) {
     getOperand(ops);
@@ -85,7 +84,7 @@ const handleOperator = (ops) => {
   }
   setOperand2(INIT);
 };
-\`\`\`
+```
 
 ### Continued development
 
@@ -102,7 +101,7 @@ I probably need to adjust the getDisplayNumber function from the Web Dev Simplif
 
 ## Author
 
-- Website - [Joel P. Doctor](https://joeldoctor.com/)
+- Website - [Joel P. Doctor](https://www.kingwell47.com) - Currently made using SquareSpace, I will migrate it once I make my own site.
 - Frontend Mentor - [@kingwell47](https://www.frontendmentor.io/profile/kingwell47)
 - Twitter - [@kingwell47](https://www.twitter.com/kingwell47)
 - LinkedIn - [Joel P. Doctor](https://www.linkedin.com/in/joel-d-05854919/)
@@ -110,4 +109,3 @@ I probably need to adjust the getDisplayNumber function from the Web Dev Simplif
 ## Acknowledgments
 
 Thanks to Ms. Jessica Chan (Coder Coder) and all the other YouTube creators making their knowledge available!
-`;

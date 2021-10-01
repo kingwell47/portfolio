@@ -7,7 +7,8 @@
     "url2": "https://github.com/kingwell47/sunnyside",
     "date": "August 26, 2021",
     "tags": "HTML, CSS, JavaScript",
-    "image": "sunnyside.jpg"
+    "image": "sunnyside.jpg",
+    "readme": "sunnyside.md"
   },
   {
     "_id": 2,
@@ -17,7 +18,8 @@
     "url2": "https://github.com/kingwell47/tip-calculator",
     "date": "August 29, 2021",
     "tags": "HTML, CSS, JavaScript",
-    "image": "tip-calculator.png"
+    "image": "tip-calculator.png",
+    "readme": "tip_calculator.md"
   },
   {
     "_id": 3,
@@ -27,7 +29,8 @@
     "url2": "https://github.com/kingwell47/room-homepage",
     "date": "September 3, 2021",
     "tags": "HTML, CSS, JavaScript",
-    "image": "room-homepage.png"
+    "image": "room-homepage.png",
+    "readme": "room.md"
   },
   {
     "_id": 4,
@@ -37,7 +40,8 @@
     "url2": "https://github.com/kingwell47/markdown-previewer",
     "date": "September 5, 2021",
     "tags": "HTML, CSS, JavaScript, React",
-    "image": "markdown.png"
+    "image": "markdown.png",
+    "readme": "markdown.md"
   },
   {
     "_id": 5,
@@ -47,7 +51,8 @@
     "url2": "https://github.com/kingwell47/drum-machine",
     "date": "September 6, 2021",
     "tags": "HTML, CSS, JavaScript, React",
-    "image": "sound-machine.png"
+    "image": "sound-machine.png",
+    "readme": "sound_machine.md"
   },
   {
     "_id": 6,
@@ -57,7 +62,8 @@
     "url2": "https://github.com/kingwell47/javascript-calculator",
     "date": "September 11, 2021",
     "tags": "HTML, CSS, JavaScript, React",
-    "image": "calculator.png"
+    "image": "calculator.png",
+    "readme": "calculator.md"
   },
   {
     "_id": 7,
@@ -67,7 +73,8 @@
     "url2": "https://github.com/kingwell47/25-5-clock",
     "date": "September 13, 2021",
     "tags": "HTML, CSS, JavaScript, React",
-    "image": "pomodoro.png"
+    "image": "pomodoro.png",
+    "readme": "pomodoro.md"
   },
   {
     "_id": 8,
@@ -77,6 +84,7 @@
     "url2": "https://github.com/kingwell47/url-shortnening",
     "date": "September 19, 2021",
     "tags": "HTML, CSS, JavaScript, React, API",
-    "image": "shortening.jpeg"
+    "image": "shortening.jpeg",
+    "readme": "shortening.md"
   }
 ]

@@ -1,4 +1,3 @@
-export const sunnyside = `
 # Frontend Mentor - Sunnyside agency landing page solution
 
 This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
@@ -53,7 +52,7 @@ Users should be able to:
 My first project, learned a lot about how to structure workflow and test changes on the browser. As well as using VS Code, Git and other tools.
 
 Learned about using multiple classes for css changes:
-\`\`\`html
+```html
 <div id="transform-text" class="features__element container text">
   <div class="text-wrapper">
     <div class="features__title1">        
@@ -68,10 +67,10 @@ Learned about using multiple classes for css changes:
     </a>
   </div>      
 </div>
-\`\`\`
+```
 
 Using flex-grow to fix some overflow problems before the links were hidden:
-\`\`\`scss
+```scss
 &__links {
   flex-grow: 0.25;
   text-align: center;
@@ -87,7 +86,7 @@ Using flex-grow to fix some overflow problems before the links were hidden:
           }
       }
 }
-\`\`\`
+```
 
 ### Continued development
 
@@ -107,4 +106,3 @@ This solution isn't 100% accurate to the design image given so I'm not very psyc
 ## Acknowledgments
 
 Thanks to Ms. Jessica Chan (Coder Coder) and all the other YouTube creators making their knowledge available!
-`;

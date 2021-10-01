@@ -1,4 +1,3 @@
-export const room = `
 # Frontend Mentor - Room homepage solution
 
 This is a solution to the [Room homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
@@ -53,18 +52,18 @@ Users should be able to:
 
 I should use Flex-basis a lot more:
 
-\`\`\`css
+```css
 .header {
   flex: 1 0.75 fnc.rem(840);
   min-height: fnc.rem(360);
   position: relative;
   padding-top: fnc.rem(48);
 }
-\`\`\`
+```
 
 Sliding based on the margin:
 
-\`\`\`js
+```js
 function navigateSlides() {
   slides.classList.remove("animated");
   textSlides.classList.remove("animated");
@@ -77,7 +76,7 @@ function navigateSlides() {
     textSlides.style.marginLeft = "";
   }
 }
-\`\`\`
+```
 
 ### Continued development
 
@@ -90,7 +89,7 @@ Looking for a way to restart the automated sliding after a delay.
 
 ## Author
 
-- Website - [Joel P. Doctor](https://joeldoctor.com/)
+- Website - [Joel P. Doctor](https://www.kingwell47.com) - Currently made using SquareSpace, I will migrate it once I make my own site.
 - Frontend Mentor - [@kingwell47](https://www.frontendmentor.io/profile/kingwell47)
 - Twitter - [@kingwell47](https://www.twitter.com/kingwell47)
 - LinkedIn - [Joel P. Doctor](https://www.linkedin.com/in/joel-d-05854919/)
@@ -98,4 +97,3 @@ Looking for a way to restart the automated sliding after a delay.
 ## Acknowledgments
 
 Thanks to Ms. Jessica Chan (Coder Coder) and all the other YouTube creators making their knowledge available!
-`;

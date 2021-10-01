@@ -1,4 +1,3 @@
-export const tipCalculator = `
 # Frontend Mentor - Tip calculator app solution
 
 This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
@@ -55,15 +54,15 @@ Users should be able to:
 I learned some CSS Grid and how to use JavaScript on a web page!
 
 Adding the error message span inside the label seemed like a good idea:
-\`\`\`html
+```html
 <div class="selector__people-number">
   <label for="number-of-people">Number of People <span class="error_message" id="invalid-people"></span></label>
   <span id="person-icon"><img src="images/icon-person.svg" alt="Person"></span>
   <input id="number-of-people" type="number" min="1" placeholder="0" step="1">
 </div>
-\`\`\`
+```
 Using radio input instead of buttons was also inspiring:
-\`\`\`scss
+```scss
  > label {
             border-radius: fnc.rem(5);
             padding-top: fnc.rem(6);
@@ -82,18 +81,18 @@ Using radio input instead of buttons was also inspiring:
             }            
         }
 }
-\`\`\`
+```
 This error handler was fun to find:
-\`\`\`js
+```js
 function errorHandler(input, message) {
     let parentElem = input.parentElement;
     let errorSpan = parentElem.querySelector('.error_message');
 
     errorSpan.innerText = message;
 }
-\`\`\`
+```
 This querySelectorAll was also very useful:
-\`\`\`js
+```js
 document.querySelectorAll('.selector__value').forEach(item => {
     item.addEventListener('change', event => {
         enableResetBtn();        
@@ -103,7 +102,7 @@ document.querySelectorAll('.selector__value').forEach(item => {
         calculateTip(tipObj);
     })
   })
-\`\`\`
+```
 
 
 ### Continued development
@@ -118,7 +117,7 @@ I'm not sure about the error checking or handling of this calculator, as well as
 
 ## Author
 
-- Website - [Joel P. Doctor](https://joeldoctor.com/)
+- Website - [Joel P. Doctor](https://www.kingwell47.com) - Currently made using SquareSpace, I will migrate it once I make my own site.
 - Frontend Mentor - [@kingwell47](https://www.frontendmentor.io/profile/kingwell47)
 - Twitter - [@kingwell47](https://www.twitter.com/kingwell47)
 - LinkedIn - [Joel P. Doctor](https://www.linkedin.com/in/joel-d-05854919/)
@@ -126,4 +125,5 @@ I'm not sure about the error checking or handling of this calculator, as well as
 ## Acknowledgments
 
 Thanks to Ms. Jessica Chan (Coder Coder) and all the other YouTube creators making their knowledge available!
-`;
+
+

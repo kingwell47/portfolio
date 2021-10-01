@@ -1,4 +1,3 @@
-export const soundMachine = `
 # Sound Machine
 
 ## FreeCodeCamp.org - Front End Development Libraries Project
@@ -40,7 +39,7 @@ This is a solution to the [Build a Drum Machine project](https://www.freecodecam
 
 Importing multiple sounds is tricky. I think there is an easier way but I will need to find it:
 
-\`\`\`js
+```js
 const soundList = {
   sound01:
     require("../audio/270304__littlerobotsoundfactory__collect-point-00.wav")
@@ -64,13 +63,13 @@ const soundList = {
 };
 
 export default soundList;
-\`\`\`
+```
 
 I probably could have it be in line though 🤔
 
 Making an array for items and them mapping them makes things a lot easier:
 
-\`\`\`js
+```js
 return (
   <section className='button-grid'>
     {soundsArray.map((item) => (
@@ -85,7 +84,7 @@ return (
     ))}
   </section>
 );
-\`\`\`
+```
 
 ### Continued development
 
@@ -98,7 +97,7 @@ This does not have the "on/off" or "set" toggle that the example had. I will loo
 
 ## Author
 
-- Website - [Joel P. Doctor](https://joeldoctor.com/)
+- Website - [Joel P. Doctor](https://www.kingwell47.com) - Currently made using SquareSpace, I will migrate it once I make my own site.
 - Frontend Mentor - [@kingwell47](https://www.frontendmentor.io/profile/kingwell47)
 - Twitter - [@kingwell47](https://www.twitter.com/kingwell47)
 - LinkedIn - [Joel P. Doctor](https://www.linkedin.com/in/joel-d-05854919/)
@@ -106,4 +105,3 @@ This does not have the "on/off" or "set" toggle that the example had. I will loo
 ## Acknowledgments
 
 Thanks to Ms. Jessica Chan (Coder Coder) and all the other YouTube creators making their knowledge available!
-`;

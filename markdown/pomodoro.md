@@ -1,4 +1,3 @@
-export const pomodoro = `
 # 25 + 5 Clock
 
 ## FreeCodeCamp.org - Front End Development Libraries Project
@@ -44,7 +43,7 @@ The order of the functions and methods called matter very much to the time based
 
 Also, there is more than one way to make a countdown timer.
 
-\`\`\`js
+```js
 const doIntervalChange = () => {
   let minutes = Math.floor(totalTime / 60);
   let seconds = totalTime % 60;
@@ -54,11 +53,11 @@ const doIntervalChange = () => {
   timerSeconds.current = seconds;
   setTotalTime(totalTime - 1);
 };
-\`\`\`
+```
 
 UseEffect is pretty USEful! (Get it?)
 
-\`\`\`js
+```js
 useEffect(() => {
   let interval = setInterval(() => {
     if (timerMinutes.current === "00") {
@@ -86,7 +85,7 @@ useEffect(() => {
   }, 1000); // 1 second intervals
   return () => clearInterval(interval);
 });
-\`\`\`
+```
 
 ### Continued development
 
@@ -105,7 +104,7 @@ I also don't think this is the most efficient code ever, it probably needs a lot
 
 ## Author
 
-- Website - [Joel P. Doctor](https://joeldoctor.com/)
+- Website - [Joel P. Doctor](https://www.kingwell47.com) - Currently made using SquareSpace, I will migrate it once I make my own site.
 - Frontend Mentor - [@kingwell47](https://www.frontendmentor.io/profile/kingwell47)
 - Twitter - [@kingwell47](https://www.twitter.com/kingwell47)
 - LinkedIn - [Joel P. Doctor](https://www.linkedin.com/in/joel-d-05854919/)
@@ -113,4 +112,3 @@ I also don't think this is the most efficient code ever, it probably needs a lot
 ## Acknowledgments
 
 Thanks to Ms. Jessica Chan (Coder Coder) and all the other YouTube creators making their knowledge available!
-`;
