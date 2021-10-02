@@ -78,6 +78,10 @@
     }
   }
 
+  p {
+    margin-top: fnc.rem(16);
+  }
+
   pre {
     background-color: var(--color-primary-100);
     padding: fnc.rem(16);

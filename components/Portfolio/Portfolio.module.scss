@@ -81,6 +81,11 @@
     padding: fnc.rem(16);
   }
 
+  &_date {
+    font-size: fnc.rem(14);
+    color: var(--color-primary-200);
+  }
+
   .image {
     width: min(100%, fnc.rem(500));
   }
@@ -111,6 +116,7 @@
   }
 
   &_tags {
+    font-size: fnc.rem(14);
   }
 
   .buttons {
