@@ -1,4 +1,6 @@
-# Frontend Mentor - Sunnyside agency landing page solution
+# Sunnyside Agency Landing Page
+
+## Frontend Mentor - Sunnyside agency landing page solution
 
 This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -6,7 +8,6 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -25,11 +26,6 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Screenshot
-
-![](./Screenshot.jpg)
-
-
 ### Links
 
 - Solution URL: https://www.frontendmentor.io/solutions/responsive-site-using-css-flexbox-epHjUnk1K
@@ -46,30 +42,32 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 
-
 ### What I learned
 
 My first project, learned a lot about how to structure workflow and test changes on the browser. As well as using VS Code, Git and other tools.
 
 Learned about using multiple classes for css changes:
+
 ```html
 <div id="transform-text" class="features__element container text">
   <div class="text-wrapper">
-    <div class="features__title1">        
+    <div class="features__title1">
       <h2>Transform your brand</h2>
     </div>
     <div class="features__text1">
-      <p>We are a full-service creative agency specializing in helping brands grow fast. 
-      Engage your clients through compelling visuals that do most of the marketing for you.</p>
+      <p>
+        We are a full-service creative agency specializing in helping brands
+        grow fast. Engage your clients through compelling visuals that do most
+        of the marketing for you.
+      </p>
     </div>
-    <a href="#" class="features__link">
-      Learn more
-    </a>
-  </div>      
+    <a href="#" class="features__link"> Learn more </a>
+  </div>
 </div>
 ```
 
 Using flex-grow to fix some overflow problems before the links were hidden:
+
 ```scss
 &__links {
   flex-grow: 0.25;
@@ -77,10 +75,10 @@ Using flex-grow to fix some overflow problems before the links were hidden:
 
   ul {
       list-style: none;
-      
+
       li {
           display: inline;
-          
+
           &:not(:last-child){
               margin-right: 50px;
           }

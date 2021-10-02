@@ -12,7 +12,7 @@ function About() {
       <hr />
       <div className={styles.bottom}>
         <div className={`${styles.image_wrap} hide-for-mobile`}>
-          <Image src={bike} alt='bike' layout='fill' />
+          <Image src={bike} alt='bike' layout='fill' placeholder='blur' />
         </div>
         <div className={styles.right}>
           <div className={styles.text_wrap}>
@@ -45,8 +45,8 @@ function About() {
                 <Image
                   src='/images/about/github.png'
                   alt='github'
-                  width='100%'
-                  height='100%'
+                  width='100'
+                  height='100'
                 />
               </a>
             </li>
@@ -58,8 +58,8 @@ function About() {
                 <Image
                   src='/images/about/fem.png'
                   alt='frontend mentor'
-                  width='100%'
-                  height='100%'
+                  width='100'
+                  height='100'
                 />
               </a>
             </li>
@@ -71,8 +71,8 @@ function About() {
                 <Image
                   src='/images/about/fcc.svg'
                   alt='freecodecamp'
-                  width='100%'
-                  height='100%'
+                  width='100'
+                  height='100'
                 />
               </a>
             </li>
@@ -84,8 +84,8 @@ function About() {
                 <Image
                   src='/images/about/linkedin.png'
                   alt='linkedin'
-                  width='100%'
-                  height='100%'
+                  width='100'
+                  height='100'
                 />
               </a>
             </li>

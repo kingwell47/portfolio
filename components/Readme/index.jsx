@@ -7,15 +7,16 @@ import styles from "./Readme.module.scss";
 function Readme(props) {
   return (
     <>
-      <section className={styles.readme}>
+      <section className={`${styles.readme} container`}>
         <Link href='/portfolio'>
           <a className={styles.back}>Back to All Projects</a>
         </Link>
         <div className={styles.image_wrapper}>
           <Image
-            src={`/images/portfolio/${props.image}`}
+            src={
+              require(`../../public/images/portfolio/${props.image}`).default
+            }
             alt={props.image}
-            layout='fill'
             className={styles.image}
           />
         </div>

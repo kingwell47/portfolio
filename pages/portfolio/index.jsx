@@ -11,7 +11,6 @@ function portfolio() {
       <Head>
         <title>All Projects - Joel P. Doctor - Online Portfolio</title>
       </Head>
-      <h1>This page is under construction!</h1>
       <Porftolio />
     </>
   );

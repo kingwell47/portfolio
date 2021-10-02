@@ -7,7 +7,6 @@ This is a solution to the [Build a Drum Machine project](https://www.freecodecam
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -18,10 +17,6 @@ This is a solution to the [Build a Drum Machine project](https://www.freecodecam
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
-
-### Screenshot
-
-![](./Screenshot.png)
 
 ### Links
 
@@ -97,7 +92,7 @@ This does not have the "on/off" or "set" toggle that the example had. I will loo
 
 ## Author
 
-- Website - [Joel P. Doctor](https://www.kingwell47.com) - Currently made using SquareSpace, I will migrate it once I make my own site.
+- Website - [Joel P. Doctor](https://www.joeldoctor.com)
 - Frontend Mentor - [@kingwell47](https://www.frontendmentor.io/profile/kingwell47)
 - Twitter - [@kingwell47](https://www.twitter.com/kingwell47)
 - LinkedIn - [Joel P. Doctor](https://www.linkedin.com/in/joel-d-05854919/)

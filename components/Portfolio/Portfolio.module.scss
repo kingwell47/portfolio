@@ -1,0 +1,138 @@
+@use "/functions" as fnc;
+
+.portfolio {
+  width: min(100%, fnc.rem(1440));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    font-size: clamp(fnc.rem(27), 4vw, fnc.rem(48));
+    text-align: center;
+    color: var(--color-primary-200);
+    margin-bottom: 1rem;
+  }
+}
+
+.filter {
+  width: min(100%, fnc.rem(1110));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: fnc.rem(16);
+
+  @include fnc.breakpoint-up(large) {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+  }
+
+  .label {
+    flex-shrink: 0;
+    margin-right: fnc.rem(16);
+    align-self: center;
+  }
+
+  .select {
+    width: 100%;
+    margin-right: fnc.rem(24);
+  }
+
+  .option {
+  }
+
+  .button {
+    width: fnc.rem(200);
+    font-size: fnc.rem(16);
+  }
+}
+
+.display {
+  padding-top: fnc.rem(48);
+  @include fnc.breakpoint-up(medium) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: fnc.rem(32);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: fnc.rem(3) solid var(--color-primary-200);
+  border-radius: fnc.rem(8);
+  overflow: hidden;
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.25);
+  &:not(:last-child) {
+    margin-bottom: fnc.rem(24);
+  }
+
+  @include fnc.breakpoint-up(medium) {
+    flex-direction: row;
+    gap: 1rem;
+    padding: fnc.rem(16);
+  }
+
+  .image {
+    width: min(100%, fnc.rem(500));
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: fnc.rem(8);
+
+    @include fnc.breakpoint-up(medium) {
+      order: -1;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    * + * {
+      margin-top: 1em;
+    }
+  }
+
+  &_title {
+  }
+
+  &_description {
+  }
+
+  &_tags {
+  }
+
+  .buttons {
+    display: flex;
+    gap: fnc.rem(16);
+
+    li {
+      margin-top: 0;
+    }
+  }
+
+  .button {
+    font-size: fnc.rem(20);
+  }
+
+  & a {
+    color: var(--color-neutral-100);
+    text-decoration: underline;
+    margin-bottom: 1rem;
+
+    &:hover {
+      color: var(--color-primary-200);
+    }
+  }
+}

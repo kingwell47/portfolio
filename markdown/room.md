@@ -6,7 +6,6 @@ This is a solution to the [Room homepage challenge on Frontend Mentor](https://w
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -15,8 +14,6 @@ This is a solution to the [Room homepage challenge on Frontend Mentor](https://w
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -27,10 +24,6 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Navigate the slider using either their mouse/trackpad or keyboard
-
-### Screenshot
-
-![](./Screenshot.png)
 
 ### Links
 
@@ -89,7 +82,7 @@ Looking for a way to restart the automated sliding after a delay.
 
 ## Author
 
-- Website - [Joel P. Doctor](https://www.kingwell47.com) - Currently made using SquareSpace, I will migrate it once I make my own site.
+- Website - [Joel P. Doctor](https://www.joeldoctor.com)
 - Frontend Mentor - [@kingwell47](https://www.frontendmentor.io/profile/kingwell47)
 - Twitter - [@kingwell47](https://www.twitter.com/kingwell47)
 - LinkedIn - [Joel P. Doctor](https://www.linkedin.com/in/joel-d-05854919/)

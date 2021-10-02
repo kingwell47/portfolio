@@ -59,7 +59,7 @@ function Contact() {
       <h1 className={styles.title}>Contact Me</h1>
       <div className={styles.wrapper}>
         <div className='hide-for-mobile'>
-          <Image src={image} alt='' />
+          <Image src={image} alt='' placeholder='blur' />
         </div>
         <form
           ref={form}

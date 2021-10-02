@@ -59,7 +59,7 @@ function Resume() {
           </a>
         </div>
         <div className={`${styles.image_wrapper} hide-for-mobile`}>
-          <Image src={resume} alt='resume' />
+          <Image src={resume} alt='resume' placeholder='blur' />
         </div>
       </div>
 

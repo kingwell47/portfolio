@@ -88,6 +88,7 @@ function Works() {
           src={props.content.image}
           alt={props.content.title}
           className={styles.image}
+          placeholder='blur'
         />
         <div className={styles.bottom_wrapper}>
           <p className={styles.text}>{props.content.text}</p>

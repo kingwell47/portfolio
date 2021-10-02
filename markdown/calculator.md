@@ -7,7 +7,7 @@ This is a solution to the [Build a JavaScript Calculator project](https://www.fr
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
+  - [The challenge](#the-challenge)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -19,9 +19,16 @@ This is a solution to the [Build a JavaScript Calculator project](https://www.fr
 
 ## Overview
 
-### Screenshot
+### The challenge
 
-![](./Screenshot.png)
+Users should be able to:
+
+- At any time, pressing the `clear` button clears the input and output values, and returns the calculator to its initialized state; 0 should be shown in the element with the id of `display`.
+- In any order, users should be able to add, subtract, multiply and divide a chain of numbers of any length, and when they hit `=`, the correct result should be shown in the element with the id of `display`.
+- Users should be able to perform any operation (+, -, \*, /) on numbers containing decimal points.
+- When the decimal element is clicked, a `.` should append to the currently displayed value; two `.` in one number should not be accepted.
+- If 2 or more operators are entered consecutively, the operation performed should be the last operator entered (excluding the negative (`-`) sign). For example, if `5 + * 7 =` is entered, the result should be `35` (i.e. `5 * 7`); if `5 * - 5 =` is entered, the result should be `-25` (i.e. `5 * (-5)`).
+- Pressing an operator immediately following `=` should start a new calculation that operates on the result of the previous evaluation.
 
 ### Links
 
@@ -101,7 +108,7 @@ I probably need to adjust the getDisplayNumber function from the Web Dev Simplif
 
 ## Author
 
-- Website - [Joel P. Doctor](https://www.kingwell47.com) - Currently made using SquareSpace, I will migrate it once I make my own site.
+- Website - [Joel P. Doctor](https://www.joeldoctor.com)
 - Frontend Mentor - [@kingwell47](https://www.frontendmentor.io/profile/kingwell47)
 - Twitter - [@kingwell47](https://www.twitter.com/kingwell47)
 - LinkedIn - [Joel P. Doctor](https://www.linkedin.com/in/joel-d-05854919/)
