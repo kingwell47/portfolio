@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useRouter } from "next/router";
 import * as ga from "../lib/ga";
 import Layout from "../components/Layout";
