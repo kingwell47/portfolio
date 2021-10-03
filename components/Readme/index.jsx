@@ -18,6 +18,7 @@ function Readme(props) {
             }
             alt={props.image}
             className={styles.image}
+            placeholder='blur'
           />
         </div>
         <Markdown className={styles.text}>{props.innerContent}</Markdown>

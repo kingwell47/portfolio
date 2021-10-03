@@ -1,34 +1,168 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Portfolio
 
-## Getting Started
+This is my personal portfolio website, built with all the knowledge I have gained so far and will be updated with knowledge I again in the future. It has a contact form with reCaptcha and Google Analytics set-up so I can see website stats.
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+- Download my Resume
+- Contact me using the contact form after passing the reCaptcha verification
+- Navigate to a page with all projects I have built
+- Navigate to a page with more information about a specific project
+
+### Screenshot
+
+![](./screenshot.jpeg)
+
+### Links
+
+- Live Site URL: http://www.joeldoctor.com
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- SCSS
+- Flexbox
+- Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next](https://nextjs.org/) - React Framework
+- [Vercel](https://vercel.com/)
+
+### What I learned
+
+This is the first project I built with Next, so I learned a lot about dynamically generated pages.
+
+I also learned about how to handle markdown files for use in each individual project page:
+
+```js
+export const getStaticProps = async (context) => {
+  const files = fs.readdirSync(path.join("markdown"));
+  const posts = files.map((fileName) => {
+    const readContent = fs.readFileSync(
+      path.join("markdown", fileName),
+      "utf-8"
+    );
+    return { fileName, readContent };
+  });
+
+  const currentProject = DATA.filter(
+    (items) => items._id === parseInt(context.params.id)
+  );
+  const currentPost = posts.filter(
+    (item) => item.fileName === currentProject[0].readme
+  );
+  return {
+    props: {
+      project: currentProject[0],
+      content: currentPost[0].readContent,
+    },
+  };
+};
+
+export const getStaticPaths = async () => {
+  const ids = DATA.map((item) => item._id);
+  const paths = ids.map((id) => ({ params: { id: id.toString() } }));
+  return {
+    paths,
+    fallback: false,
+  };
+};
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I also learned tried out using hover to make an element appear:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```scss
+.hover_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: var(--color-bg);
+  height: fnc.rem(40);
+  width: fnc.rem(144);
+  bottom: fnc.rem(-56);
+  left: fnc.rem(84);
+  visibility: hidden;
+  opacity: 0;
+  padding-bottom: 0.5rem;
+  transition: all 350ms ease;
+  transition-delay: 200ms;
+  border-radius: 0 0 fnc.rem(10) fnc.rem(10);
+}
+.stacked_link:hover .hover_link {
+  visibility: visible;
+  opacity: 1;
+}
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Setting up Google Analytics for Next was also a learning experience:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```js
+<script
+  async
+  src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+/>
+<script
+  dangerouslySetInnerHTML={{
+    __html: `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+    page_path: window.location.pathname,
+  });
+`,
+  }}
+/>
+```
 
-## Learn More
+### Continued development
 
-To learn more about Next.js, take a look at the following resources:
+I want to convert this to a Full Stack website eventually to implement some kind of "wall" where visitors can leave comments and it will be stored into a database.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Implementing videos on hover for my featured projects and also on the individual project pages is also something I am figuring out.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The Featured Work section also might get tabs to navigate between different featured work in different categories.
 
-## Deploy on Vercel
+Some non-web development projects also will be added eventually, once I figure out which ones are worth adding.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Useful resources
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js Crash Course 2021 by Traversy Media](https://youtu.be/mTz0GXj8NN0) - A great starting point with everything needed to learn how to set-up a Next Project.
+- [Next.js in 100 Seconds // Plus Full Beginner's Tutorial by Fireship](https://youtu.be/Sklc_fQBmcs) - Another great starting point in a more compact time frame.
+- [Next.js Documentation](https://nextjs.org/docs) - Really helpful documentation.
+- [Integrating reCAPTCHA with Next.js by Prateek Surana](https://prateeksurana.me/blog/integrating-recaptcha-with-next) - Helped with configuring the reCaptcha in the Contact page.
+- [Add Google Analytics to your Next.js application in 5 easy steps by Marie Starck](https://mariestarck.com/add-google-analytics-to-your-next-js-application-in-5-easy-steps/) - Helped me set-up Analytics.
+
+## Author
+
+- Website - [Joel P. Doctor](https://www.joeldoctor.com)
+- Frontend Mentor - [@kingwell47](https://www.frontendmentor.io/profile/kingwell47)
+- Twitter - [@kingwell47](https://www.twitter.com/kingwell47)
+- LinkedIn - [Joel P. Doctor](https://www.linkedin.com/in/joel-d-05854919/)
+
+## Acknowledgments
+
+Thanks to Ms. Jessica Chan (Coder Coder) and all the other YouTube creators making their knowledge available!

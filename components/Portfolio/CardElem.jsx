@@ -12,6 +12,7 @@ function CardElem(props) {
               .default
           }
           alt={props.values.image}
+          placeholder='blur'
         />
       </div>
       <div className={styles.left}>

@@ -113,7 +113,7 @@ function Contact() {
           </span>
           <br />
           <ReCAPTCHA
-            sitekey='6LdAgZUcAAAAALaLmlq3ISoSOLIlP6U1GKqSDYEj'
+            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
             ref={recaptchaRef}
             onChange={verifyCallback}
             theme='dark'
