@@ -9,7 +9,7 @@ function Readme(props) {
     <>
       <section className={`${styles.readme} container`}>
         <Link href='/portfolio'>
-          <a className={styles.back}>Back to All Projects</a>
+          <a className={styles.back}>&larr; Back to All Projects</a>
         </Link>
         <div className={styles.image_wrapper}>
           <Image
@@ -22,7 +22,7 @@ function Readme(props) {
         </div>
         <Markdown className={styles.text}>{props.innerContent}</Markdown>
         <Link href='/portfolio'>
-          <a className={styles.back}>Back to All Projects</a>
+          <a className={styles.back}>&larr; Back to All Projects</a>
         </Link>
       </section>
     </>

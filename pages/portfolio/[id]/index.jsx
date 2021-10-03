@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import Head from "next/head";
+import Link from "next/link";
 import DATA from "../../../components/Portfolio/data.json";
 import Readme from "../../../components/Readme";
 

@@ -14,6 +14,9 @@ function MobileMenu(props) {
           <Link href='/#works'>Featured Work</Link>
         </li>
         <li className={styles.mobile__link} onClick={props.handler}>
+          <Link href='/portfolio'>All Projects</Link>
+        </li>
+        <li className={styles.mobile__link} onClick={props.handler}>
           <Link href='/#resume'>Résumé</Link>
         </li>
         <li className={styles.mobile__link} onClick={props.handler}>
