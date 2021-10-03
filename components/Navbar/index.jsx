@@ -46,7 +46,7 @@ function NavBar() {
           <li className={`${styles.desktop__link} ${styles.stacked_link}`}>
             <Link href='/#works'>Featured Work</Link>
             <span className={styles.hover_link}>
-              <Link href='/portfolio'>All Work</Link>
+              <Link href='/portfolio'>All Projects</Link>
             </span>
           </li>
           <li className={styles.desktop__link}>
