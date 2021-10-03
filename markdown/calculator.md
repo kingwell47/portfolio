@@ -30,8 +30,9 @@ Users should be able to:
 - If 2 or more operators are entered consecutively, the operation performed should be the last operator entered (excluding the negative (`-`) sign). For example, if `5 + * 7 =` is entered, the result should be `35` (i.e. `5 * 7`); if `5 * - 5 =` is entered, the result should be `-25` (i.e. `5 * (-5)`).
 - Pressing an operator immediately following `=` should start a new calculation that operates on the result of the previous evaluation.
 
-Additional things I added:
+Additional things I did:
 
+- The calculator is designed to resemble a keyboard keypad.
 - Users can enter numbers using their keyboard keypad.
 
 ### Links

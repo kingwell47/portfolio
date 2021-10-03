@@ -17,7 +17,7 @@ function CardElem(props) {
       </div>
       <div className={styles.left}>
         <h2 className={styles.card_title}>{props.values.title}</h2>
-        <p className={styles.card_date}>Completed: {props.values.date}</p>
+        <p className={styles.card_date}>Deployed: {props.values.date}</p>
         <p className={styles.card_description}>{props.values.description}</p>
         <p className={styles.card_tags}>Tags: {props.values.tags}</p>
         <ul className={styles.buttons}>

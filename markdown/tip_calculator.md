@@ -23,9 +23,15 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 Users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Calculate the correct tip and total cost of the bill per person
+- View the optimal layout for the app depending on their device's screen size.
+- See hover states for all interactive elements on the page.
+- Calculate the correct tip and total cost of the bill per person.
+
+Additional things I did:
+
+- If the "custom" field is filled in, the tip selection buttons are unselected if there is any selected.
+- Conversely, the "custom" field is reset if a tip button is selected after.
+- Inputting an invalid value in any of the input fields will show an error message.
 
 ### Links
 

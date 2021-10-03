@@ -2,7 +2,7 @@
   {
     "_id": 1,
     "title": "Sunnyside Agency Landing Page",
-    "description": "This is a solution to the Sunnyside agency landing page challenge on Frontend Mentor.",
+    "description": "A responsive landing page that looks good on desktop or on mobile!",
     "url1": "https://kingwell47.github.io/sunnyside/",
     "url2": "https://github.com/kingwell47/sunnyside",
     "date": "August 26, 2021",
@@ -13,7 +13,7 @@
   {
     "_id": 2,
     "title": "Tip Calculator",
-    "description": "This is a solution to the Tip calculator app challenge on Frontend Mentor.",
+    "description": "A tip calculator site that is also responsive. Can handle invalid inputs!",
     "url1": "https://kingwell47.github.io/tip-calculator/",
     "url2": "https://github.com/kingwell47/tip-calculator",
     "date": "August 29, 2021",
@@ -24,7 +24,7 @@
   {
     "_id": 3,
     "title": "Room Homepage",
-    "description": "This is a solution to the Room homepage challenge on Frontend Mentor.",
+    "description": "This is a responsive homepage with a slider for images and text. It automatically slides as well!",
     "url1": "https://kingwell47.github.io/room-homepage/",
     "url2": "https://github.com/kingwell47/room-homepage",
     "date": "September 3, 2021",
@@ -35,7 +35,7 @@
   {
     "_id": 4,
     "title": "Markdown Previewer",
-    "description": "This is a solution to the Build a Markdown Previewer project on FreeCodeCamp.",
+    "description": "A simple markdown previewer with expanding windows!",
     "url1": "https://kingwell47.github.io/markdown-previewer/",
     "url2": "https://github.com/kingwell47/markdown-previewer",
     "date": "September 5, 2021",
@@ -46,7 +46,7 @@
   {
     "_id": 5,
     "title": "Sound Machine",
-    "description": "This is a solution to the Build a Drum Machine project on FreeCodeCamp.",
+    "description": "This is an 8-bit sound machine that's built to look retro-futuristic!",
     "url1": "https://kingwell47.github.io/drum-machine/",
     "url2": "https://github.com/kingwell47/drum-machine",
     "date": "September 6, 2021",
@@ -57,7 +57,7 @@
   {
     "_id": 6,
     "title": "JavaScript Calculator",
-    "description": "This is a solution to the Build a JavaScript Calculator project on FreeCodeCamp.",
+    "description": "This is a simple JavaScript Calculator styled to look like a keyboard keypad with radical gradients!",
     "url1": "https://kingwell47.github.io/javascript-calculator/",
     "url2": "https://github.com/kingwell47/javascript-calculator",
     "date": "September 11, 2021",
@@ -68,7 +68,7 @@
   {
     "_id": 7,
     "title": "25 + 5 Clock",
-    "description": "This is a solution to the Build a 25 + 5 Clock project on FreeCodeCamp.",
+    "description": "A pomodoro timer with a little surprise when the countdown ends. Good enough for any caped crusader!",
     "url1": "https://kingwell47.github.io/25-5-clock/",
     "url2": "https://github.com/kingwell47/25-5-clock",
     "date": "September 13, 2021",
@@ -79,12 +79,23 @@
   {
     "_id": 8,
     "title": "Shortly URL Shortening API",
-    "description": "This is a solution to the Shortly URL shortening API Challenge challenge on Frontend Mentor",
+    "description": "This is a fully working URL shortening website. Too bad the company isn't real!",
     "url1": "https://kingwell47.github.io/url-shortnening/",
     "url2": "https://github.com/kingwell47/url-shortnening",
     "date": "September 19, 2021",
     "tags": "HTML, CSS, JavaScript, React, API",
     "image": "shortening.jpeg",
     "readme": "shortening.md"
+  },
+  {
+    "_id": 9,
+    "title": "Personal Portfolio",
+    "description": "Wait a minute, that's this site!",
+    "url1": "https://joeldoctor.com/",
+    "url2": "https://github.com/kingwell47/portfolio",
+    "date": "October 3, 2021",
+    "tags": "HTML, CSS, JavaScript, React, Next",
+    "image": "portfolio.jpeg",
+    "readme": "portfolio.md"
   }
 ]

@@ -7,6 +7,7 @@ This is a solution to the [Build a 25 + 5 Clock project](https://www.freecodecam
 ## Table of contents
 
 - [Overview](#overview)
+  - [The challenge](#the-challenge)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -17,6 +18,23 @@ This is a solution to the [Build a 25 + 5 Clock project](https://www.freecodecam
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
+
+### The challenge
+
+Users should be able to:
+
+- Click the element with `id="reset"`, any running timer should be stopped, the `break timer` should return to 5, the `session timer` should return to 25, and the time should reset to its default state.
+- Click the element with `id="start_stop"`, the timer should begin running from the value currently displayed, even if the value has been incremented or decremented from the original value of 25.
+- If the timer is paused and they click the element with `id="start_stop"`, the countdown should resume running from the point at which it was paused.
+- The timer should switch between break and session timers when the clock hits zero.
+- There is a sound played when the timer countdown switches.
+
+Additional things I did:
+
+- The timers are designed to resemble playing cards. They are all tilted slightly.
+- The countdown timer (middle card) tilts towards the currently active time (to the left by default). It tilts to the right when the break timer is active.
+- There are two different sound effects playing when the timer switches over, depending on which timer is currently active.
+- There is also an image that appears on the middle card while switching over.
 
 ### Links
 

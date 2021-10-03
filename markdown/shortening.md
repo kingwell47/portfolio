@@ -1,4 +1,6 @@
-# Frontend Mentor - Shortly URL shortening API Challenge solution
+# Shortly URL Shortening
+
+## Frontend Mentor - Shortly URL shortening API Challenge solution
 
 This is a solution to the [Shortly URL shortening API Challenge challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -21,12 +23,17 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
-- Shorten any valid URL
-- See a list of their shortened links, even after refreshing the browser
-- Copy the shortened link to their clipboard in a single click
+- View the optimal layout for the site depending on their device's screen size.
+- Shorten any valid URL.
+- See a list of their shortened links, even after refreshing the browser.
+- Copy the shortened link to their clipboard in a single click.
 - Receive an error message when the `form` is submitted if:
   - The `input` field is empty
+
+Additional things that I did:
+
+- Implemented a check that will stop an invalid URL from being sent to the API.
+- The error display will show the API error message in case a URL is rejected. (this usually contains the reason the URL is rejected)
 
 ### Links
 
@@ -88,6 +95,8 @@ const handleError = (errMessage) => {
 ### Continued development
 
 Adding an animation for the "Shorten it!" button seems like a good place to improve this design.
+
+A way to delete previously shortenend URLs or clear the local storage also could be implemented.
 
 ### Useful resources
 

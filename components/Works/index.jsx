@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import images from "./images";
 import styles from "./Works.module.scss";
+import Card from "./Card";
 
 //Works will have tabs that cycle between different displays
 
@@ -26,6 +27,7 @@ const CONTENT = [
     ],
     live: "http://kingwell47.github.io/url-shortnening",
     git: "https://github.com/kingwell47/url-shortnening",
+    internal: "/portfolio/8",
   },
   {
     image: images.calculator,
@@ -39,6 +41,7 @@ const CONTENT = [
     ],
     live: "https://kingwell47.github.io/javascript-calculator/",
     git: "https://github.com/kingwell47/javascript-calculator",
+    internal: "/portfolio/6",
   },
   {
     image: images.pomodoro,
@@ -52,6 +55,7 @@ const CONTENT = [
     ],
     live: "https://kingwell47.github.io/25-5-clock/",
     git: "https://github.com/kingwell47/25-5-clock",
+    internal: "/portfolio/7",
   },
   {
     image: images.room,
@@ -64,50 +68,11 @@ const CONTENT = [
     ],
     live: "https://kingwell47.github.io/room-homepage/",
     git: "https://github.com/kingwell47/room-homepage",
+    internal: "/portfolio/3",
   },
 ];
 
 function Works() {
-  function TechList(props) {
-    return (
-      <>
-        {props.items.map((item, index) => {
-          return (
-            <li key={index} className={styles.icon}>
-              <Image src={item.logo} alt={item.name} />
-            </li>
-          );
-        })}
-      </>
-    );
-  }
-  function Card(props) {
-    return (
-      <div className={styles.card}>
-        <Image
-          src={props.content.image}
-          alt={props.content.title}
-          className={styles.image}
-          placeholder='blur'
-        />
-        <div className={styles.bottom_wrapper}>
-          <p className={styles.text}>{props.content.text}</p>
-          <ul className={styles.tech_wrapper}>
-            <TechList items={props.content.tech} />
-          </ul>
-          <div className={styles.button_wrapper}>
-            <a href={props.content.live} rel='noreferrer' target='_blank'>
-              <button className='btn'>Live Site</button>
-            </a>
-            <a href={props.content.git} rel='noreferrer' target='_blank'>
-              <button className='btn'>GitHub</button>
-            </a>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <section className={styles.work} id='works'>
       <h2 className={styles.title}>Featured Work</h2>

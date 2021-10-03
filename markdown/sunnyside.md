@@ -23,8 +23,13 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
+- View the optimal layout for the site depending on their device's screen size.
+- See hover states for all interactive elements on the page.
+
+Additional things I did:
+
+- Added hover states to the navbar links (these were not specified in the original challenge files).
+- Added a fade-in/out effect on the mobile menu expansion.
 
 ### Links
 

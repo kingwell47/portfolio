@@ -78,6 +78,14 @@
       width: fnc.rem(360);
       min-height: fnc.rem(360);
     }
+
+    a {
+      color: var(--color-neutral-100);
+      text-decoration: underline;
+      &:hover {
+        color: var(--color-hover);
+      }
+    }
   }
 
   .text {

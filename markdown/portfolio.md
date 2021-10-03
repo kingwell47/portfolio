@@ -6,7 +6,6 @@ This is my personal portfolio website, built with all the knowledge I have gaine
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -29,10 +28,6 @@ Users should be able to:
 - Filter projects by tags.
 - Sort objects by date or alphabetically (ascending and descending).
 - Navigate to a page with more information about a specific project.
-
-### Screenshot
-
-![](./screenshot.jpeg)
 
 ### Links
 

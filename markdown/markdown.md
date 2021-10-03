@@ -7,7 +7,7 @@ This is a solution to the [Build a Markdown Previewer project](https://www.freec
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
+  - [The challenge](#the-challenge)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -19,9 +19,13 @@ This is a solution to the [Build a Markdown Previewer project](https://www.freec
 
 ## Overview
 
-### Screenshot
+### The challenge
 
-![](/portfolio/markdown.png)
+Users should be able to:
+
+- Enter text into the #editor element. The `#preview` element is then updated as they type to display the content of the textarea.
+- Enter GitHub flavored markdown into the `#editor` element, the text then is rendered as HTML in the #preview element as they type.
+- When the markdown previewer first loads, the default markdown in the `#editor` field is rendered as HTML in the `#preview` element.
 
 ### Links
 
