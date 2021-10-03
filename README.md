@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-This is my personal portfolio website, built with all the knowledge I have gained so far and will be updated with knowledge I again in the future. It has a contact form with reCaptcha and Google Analytics set-up so I can see website stats.
+This is my personal portfolio website, built with all the knowledge I have gained so far and will be updated with knowledge I gain in the future. It has a contact form with reCaptcha and Google Analytics set-up so I can see website stats.
 
 ## Table of contents
 
