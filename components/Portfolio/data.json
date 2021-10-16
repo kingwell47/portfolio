@@ -97,5 +97,16 @@
     "tags": "HTML, CSS, JavaScript, React, Next",
     "image": "portfolio.jpeg",
     "readme": "portfolio.md"
+  },
+  {
+    "_id": 10,
+    "title": "Code Memo",
+    "description": "Not just a simple notes app!",
+    "url1": "https://kingwell47.github.io/code-memo/",
+    "url2": "https://github.com/kingwell47/code-memo",
+    "date": "October 16, 2021",
+    "tags": "HTML, CSS, JavaScript, React",
+    "image": "code-memo.png",
+    "readme": "code-memo.md"
   }
 ]
