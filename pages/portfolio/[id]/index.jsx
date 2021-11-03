@@ -31,7 +31,7 @@ export const getStaticProps = async (context) => {
   });
 
   const currentProject = DATA.filter(
-    (items) => items._id === parseInt(context.params.id)
+    (items) => items._id === context.params.id
   );
   const currentPost = posts.filter(
     (item) => item.fileName === currentProject[0].readme
