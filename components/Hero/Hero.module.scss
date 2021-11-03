@@ -71,6 +71,10 @@
         width: 100%;
         height: auto;
       }
+
+      &:hover {
+        outline: fnc.rem(3) solid var(--color-primary-200);
+      }
     }
   }
 }
