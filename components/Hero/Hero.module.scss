@@ -67,6 +67,7 @@
       height: clamp(fnc.rem(80), 6.5vw, fnc.rem(120));
       border-radius: fnc.rem(5);
       padding: clamp(fnc.rem(16), 1.5vw, fnc.rem(32));
+      transition: outline-color 350ms ease;
       img {
         width: 100%;
         height: auto;
