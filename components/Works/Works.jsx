@@ -27,7 +27,7 @@ const CONTENT = [
     ],
     live: "http://kingwell47.github.io/url-shortnening",
     git: "https://github.com/kingwell47/url-shortnening",
-    internal: "/portfolio/8",
+    internal: "/portfolio/url-shortening",
   },
   {
     image: images.calculator,
@@ -41,7 +41,7 @@ const CONTENT = [
     ],
     live: "https://kingwell47.github.io/javascript-calculator/",
     git: "https://github.com/kingwell47/javascript-calculator",
-    internal: "/portfolio/6",
+    internal: "/portfolio/javascript-calculator",
   },
   {
     image: images.pomodoro,
@@ -55,7 +55,7 @@ const CONTENT = [
     ],
     live: "https://kingwell47.github.io/25-5-clock/",
     git: "https://github.com/kingwell47/25-5-clock",
-    internal: "/portfolio/7",
+    internal: "/portfolio/pomodoro-timer",
   },
   {
     image: images.room,
@@ -68,13 +68,13 @@ const CONTENT = [
     ],
     live: "https://kingwell47.github.io/room-homepage/",
     git: "https://github.com/kingwell47/room-homepage",
-    internal: "/portfolio/3",
+    internal: "/portfolio/room-homepage",
   },
 ];
 
 function Works() {
   return (
-    <section className={styles.work} id='works'>
+    <section className={styles.work} id="works">
       <h2 className={styles.title}>Featured Work</h2>
       <hr />
       <div className={styles.cards}>
@@ -83,8 +83,8 @@ function Works() {
         })}
       </div>
       <hr />
-      <Link href='/portfolio' passHref>
-        <button className='btn'>See All Projects</button>
+      <Link href="/portfolio" passHref>
+        <button className="btn">See All Projects</button>
       </Link>
     </section>
   );
