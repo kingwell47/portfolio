@@ -119,5 +119,16 @@
     "tags": "HTML, CSS, TypeScript, React",
     "image": "product-page.png",
     "readme": "product_page.md"
+  },
+  {
+    "_id": "ph-news-app",
+    "title": "PH News App",
+    "description": "News site using aggregator API!",
+    "url1": "https://ph-news-app.herokuapp.com/",
+    "url2": "https://github.com/kingwell47/ph-news-app",
+    "date": "November 27, 2021",
+    "tags": "React, Material UI, API",
+    "image": "ph-news-app.png",
+    "readme": "ph-news-app.md"
   }
 ]
